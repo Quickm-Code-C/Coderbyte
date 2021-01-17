@@ -152,6 +152,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Coderbyte_UsernameValidation.cpp" />
+    <ClCompile Include="UsernameValidation.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="UsernameValidation.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
