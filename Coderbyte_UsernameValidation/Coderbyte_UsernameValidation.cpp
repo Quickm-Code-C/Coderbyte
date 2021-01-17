@@ -1,20 +1,101 @@
-// Coderbyte_UsernameValidation.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// Coderbyte_UsernameValidation.cpp : This file contains the 'main' function. 
+// Program execution begins and ends there.
 //
 
 #include <iostream>
+#include <string>
+#include <cctype>
+using namespace std;
 
-int main()
+bool validateLength(string str)
 {
-    std::cout << "Hello World!\n";
+	// The username is between 4 and 25 characters.
+	bool result = false;
+	int  length = str.size();
+
+	result = (length >= 4 && length <= 25);
+
+	return result;
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
+bool validateStartWithLetter(string str)
+{
+	// It must start with a letter.
+	bool result = true;
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+	result = isalpha(str.at(0));
+
+	return result;
+}
+
+bool validateOnlyValidCharacters(string str)
+{
+	// It can only contain letters, numbers, and the underscore character.
+	bool result = true;
+
+	for (char c : str)
+	{
+		if (!isalpha(c) && !isdigit(c) && !(c == '_')) {
+			result = false;
+			break;
+		}
+	}
+
+	return result;
+}
+
+bool validateEndCharacter(string str)
+{
+	// It cannot end with an underscore character.
+	bool result = true;
+	int  length = str.size();
+	char c      = str.at(length - 1);
+
+	result = (c != '_');
+
+	return result;
+}
+
+
+
+/*
+Have the function CodelandUsernameValidation(str) take the str parameter being 
+passed and determine if the string is a valid username according to the 
+following rules :
+
+1. The username is between 4 and 25 characters.
+2. It must start with a letter.
+3. It can only contain letters, numbers, and the underscore character.
+4. It cannot end with an underscore character.
+
+If the username is valid then your program should return the string true, 
+otherwise return the string false.
+*/
+
+string CodelandUsernameValidation(string str) {
+	// code goes here
+	string result;
+
+	bool rule1 = validateLength(str);
+	bool rule2 = validateStartWithLetter(str);
+	bool rule3 = validateOnlyValidCharacters(str);
+	bool rule4 = validateEndCharacter(str);
+
+	result = (rule1 && rule2 && rule3 && rule4) ? "true" : "false";
+	return result;
+
+}
+
+int main(void) {
+	string input;
+
+	input = "t9_fjrjkgljoirg8945jgg";
+
+	// keep this function call here
+	//cout << CodelandUsernameValidation(coderbyteInternalStdinFunction(stdin));
+
+	cout << CodelandUsernameValidation(input);
+
+	return 0;
+
+}
