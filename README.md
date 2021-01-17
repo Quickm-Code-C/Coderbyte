@@ -7,5 +7,5 @@ There are 4 validation rules:
 3. The username can only contain letters, numbers, and the underscore character.
 4. The username cannot end with an underscore character.
 
-A supporting functions exists for each validation rule.  The CodelandUsernameValidation function calls each rule functions and returns 
+A supporting functions exists for each validation rule.  The CodelandUsernameValidation function calls each rule function and returns 
 the appropriate resultant string.
