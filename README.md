@@ -4,5 +4,6 @@ Coderbyte code challenges: This repository contains code solutions for code chal
 The completed code challenges are:
  - Check Numbers
  - Longest Word
+ - Time Convert
  - Username Validation
  - Matrix Determinant (hard)
