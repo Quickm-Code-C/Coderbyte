@@ -7,6 +7,7 @@
 #include "UsernameValidation.h"
 #include "MatrixDeterminant.h"
 #include "WordLength.h"
+#include "NumberCheck.h"
 
 using namespace std;
 
@@ -35,6 +36,14 @@ int main(void) {
 	input = "The fox wouldn't lazy in the forest.";
 	WordLength wl;
 	cout << "Longest Word: " << wl.LongestWord(input) << endl;
+	cout << endl;
+
+	// CheckNums
+	int number1 = 23;
+	int	number2 = 45;
+
+	NumberCheck  check;
+	cout << "Check Numbers: " << "number one: " << number1 << " number 2: " << number2 << "  Result: " << check.checkNums(number1, number2) << endl;
 	cout << endl;
 
 
