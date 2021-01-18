@@ -152,9 +152,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Coderbyte_UsernameValidation.cpp" />
+    <ClCompile Include="MatrixDeterminant.cpp" />
     <ClCompile Include="UsernameValidation.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MatrixDeterminant.h" />
     <ClInclude Include="UsernameValidation.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
