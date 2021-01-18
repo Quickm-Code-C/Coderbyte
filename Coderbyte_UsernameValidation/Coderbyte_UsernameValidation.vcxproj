@@ -151,7 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Coderbyte_UsernameValidation.cpp" />
+    <ClCompile Include="Coderbyte.cpp" />
     <ClCompile Include="MatrixDeterminant.cpp" />
     <ClCompile Include="UsernameValidation.cpp" />
   </ItemGroup>

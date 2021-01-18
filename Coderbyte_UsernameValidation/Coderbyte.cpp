@@ -1,4 +1,4 @@
-// Coderbyte_UsernameValidation.cpp : This file contains the 'main' function. 
+// This file contains the 'main' function. 
 // Program execution begins and ends there.
 //
 
