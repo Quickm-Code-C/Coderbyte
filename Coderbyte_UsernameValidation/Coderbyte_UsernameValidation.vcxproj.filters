@@ -24,12 +24,18 @@
     <ClCompile Include="Coderbyte.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="WordLength.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="UsernameValidation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MatrixDeterminant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WordLength.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
