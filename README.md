@@ -6,6 +6,7 @@ The completed code challenges are:
  - Check Numbers
  - First Reverse
  - Longest Word
+ - Simple Adding
  - Time Convert
  - Username Validation
  - Matrix Determinant (hard)
