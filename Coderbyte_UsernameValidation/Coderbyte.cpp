@@ -9,36 +9,43 @@
 #include "WordLength.h"
 #include "NumberCheck.h"
 #include "TimeConverter.h"
+#include "Alphabet.h"
 
 using namespace std;
 
-
-int main(void) {
-
-
+void test_usernameValidation()
+{
 	// Username Validation: keep this function call here
 	string				input = "t9_fjrjkgljoirg8945jgg";
 	UsernameValidation	validator;
 	//cout << CodelandUsernameValidation(coderbyteInternalStdinFunction(stdin));
 	cout << "Validation: " << validator.CodelandUsernameValidation(input) << endl;
 	cout << endl;
+}
 
+void test_determinant()
+{
 	// Determinant
-	string	array[] = { "1", "4", "3","<>", "2","3","0", "<>", "5", "-3","4"};
+	string	array[] = { "1", "4", "3","<>", "2","3","0", "<>", "5", "-3","4" };
 	Determinant  d;
 	int          det;
 
-	det = d.MatrixDeterminant(array,11);
+	det = d.MatrixDeterminant(array, 11);
 	cout << "Determinant value: " << det << endl;
 	cout << endl;
+}
 
-
+void test_longestWord()
+{
 	// LongestWord
-	input = "The fox wouldn't lazy in the forest.";
+	string input = "The fox wouldn't lazy in the forest.";
 	WordLength wl;
 	cout << "Longest Word: " << wl.LongestWord(input) << endl;
 	cout << endl;
+}
 
+void test_checkNums()
+{
 	// CheckNums
 	int number1 = 23;
 	int	number2 = 45;
@@ -46,13 +53,41 @@ int main(void) {
 	NumberCheck  check;
 	cout << "Check Numbers: " << "number one: " << number1 << " number 2: " << number2 << "  Result: " << check.checkNums(number1, number2) << endl;
 	cout << endl;
+}
 
+void test_timeConverter()
+{
 	// TimeConvert
 	int				totalMinutes = 73;
 	TimeConverter	tc;
 	cout << "TimeConvert: " << totalMinutes << " minutes converts to " << tc.TimeConvert(totalMinutes) << endl;
 	cout << endl;
+}
 
+void test_alphabetSoup()
+{
+	string		text = "jgklsgtiowegtankvlae";
+	Alphabet	alpha;
+
+	cout << "Alphabet Soup: ";
+	cout << "Original string: " << text << " Converted string: " << alpha.AlphabetSoup(text) << endl;
+	cout << endl;
+}
+
+
+int main(void) {
+
+	test_usernameValidation();
+
+	test_determinant();
+
+	test_longestWord();
+
+	test_checkNums();
+
+	test_timeConverter();
+
+	test_alphabetSoup();
 
 	return 0;
 

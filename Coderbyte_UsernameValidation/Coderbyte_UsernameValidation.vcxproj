@@ -152,6 +152,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Alphabet.cpp" />
     <ClCompile Include="Coderbyte.cpp" />
     <ClCompile Include="NumberCheck.cpp" />
     <ClCompile Include="TimeConverter.cpp" />
@@ -160,6 +161,7 @@
     <ClCompile Include="UsernameValidation.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Alphabet.h" />
     <ClInclude Include="NumberCheck.h" />
     <ClInclude Include="TimeConverter.h" />
     <ClInclude Include="WordLength.h" />
