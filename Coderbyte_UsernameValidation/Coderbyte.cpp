@@ -8,6 +8,7 @@
 #include "MatrixDeterminant.h"
 #include "WordLength.h"
 #include "NumberCheck.h"
+#include "TimeConverter.h"
 
 using namespace std;
 
@@ -44,6 +45,12 @@ int main(void) {
 
 	NumberCheck  check;
 	cout << "Check Numbers: " << "number one: " << number1 << " number 2: " << number2 << "  Result: " << check.checkNums(number1, number2) << endl;
+	cout << endl;
+
+	// TimeConvert
+	int				totalMinutes = 73;
+	TimeConverter	tc;
+	cout << "TimeConvert: " << totalMinutes << " minutes converts to " << tc.TimeConvert(totalMinutes) << endl;
 	cout << endl;
 
 

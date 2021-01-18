@@ -154,12 +154,14 @@
   <ItemGroup>
     <ClCompile Include="Coderbyte.cpp" />
     <ClCompile Include="NumberCheck.cpp" />
+    <ClCompile Include="TimeConverter.cpp" />
     <ClCompile Include="WordLength.cpp" />
     <ClCompile Include="MatrixDeterminant.cpp" />
     <ClCompile Include="UsernameValidation.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="NumberCheck.h" />
+    <ClInclude Include="TimeConverter.h" />
     <ClInclude Include="WordLength.h" />
     <ClInclude Include="MatrixDeterminant.h" />
     <ClInclude Include="UsernameValidation.h" />
