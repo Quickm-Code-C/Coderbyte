@@ -10,6 +10,7 @@
 #include "NumberCheck.h"
 #include "TimeConverter.h"
 #include "Alphabet.h"
+#include "Reverse.h"
 
 using namespace std;
 
@@ -74,6 +75,16 @@ void test_alphabetSoup()
 	cout << endl;
 }
 
+void test_firstReverse()
+{
+	string		text = "jgklsgtiowegtankvlae";
+	Reverse		reverse;
+
+	cout << "First Reverse: ";
+	cout << "Original string: " << text << " Converted string: " << reverse.FirstReverse(text) << endl;
+	cout << endl;
+}
+
 
 int main(void) {
 
@@ -88,6 +99,8 @@ int main(void) {
 	test_timeConverter();
 
 	test_alphabetSoup();
+
+	test_firstReverse();
 
 	return 0;
 
