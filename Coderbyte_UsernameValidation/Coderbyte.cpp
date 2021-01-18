@@ -11,6 +11,7 @@
 #include "TimeConverter.h"
 #include "Alphabet.h"
 #include "Reverse.h"
+#include "Summation.h"
 
 using namespace std;
 
@@ -85,6 +86,16 @@ void test_firstReverse()
 	cout << endl;
 }
 
+void test_simpleAdding()
+{
+	int			count = 34;
+	Summation	sum;
+
+	cout << "Simple Adding: ";
+	cout << "Number count: " << count << " Sum: " << sum.SimpleAdding(count) << endl;
+	cout << endl;
+}
+
 
 int main(void) {
 
@@ -101,6 +112,8 @@ int main(void) {
 	test_alphabetSoup();
 
 	test_firstReverse();
+
+	test_simpleAdding();
 
 	return 0;
 
