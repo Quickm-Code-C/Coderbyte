@@ -13,5 +13,6 @@ The completed code challenges are:
  - Simple Symbols
  - Time Convert
  - Username Validation
+ - Chessboard Traveling (hard)
  - Kaprekar's Constant (hard)
  - Matrix Determinant (hard)
