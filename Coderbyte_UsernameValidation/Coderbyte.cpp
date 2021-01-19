@@ -14,6 +14,7 @@
 #include "Summation.h"
 #include "ChangeLetter.h"
 #include "Symbols.h"
+#include "Factorial.h"
 
 using namespace std;
 
@@ -118,6 +119,16 @@ void test_simpleSymbols()
 	cout << endl;
 }
 
+void test_firstFactorial()
+{
+	int			value = 3;
+	Factorial	calculator;
+
+	cout << "First Factorial: ";
+	cout << "Value: " << value << " Factorial: " << calculator.FirstFactorial(value) << endl;
+	cout << endl;
+}
+
 
 int main(void) {
 
@@ -140,6 +151,8 @@ int main(void) {
 	test_letterChanges();
 
 	test_simpleSymbols();
+
+	test_firstFactorial();
 
 	return 0;
 
