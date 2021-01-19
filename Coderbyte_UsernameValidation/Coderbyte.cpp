@@ -16,6 +16,7 @@
 #include "Symbols.h"
 #include "Factorial.h"
 #include "Kaprekar.h"
+#include "Chessboard.h"
 
 using namespace std;
 
@@ -151,6 +152,16 @@ void test_kaprekarConstant()
 	cout << endl;
 }
 
+void test_chessboardTraveling()
+{
+	string			input = "(1 1)(2 2)";
+	Chessboard		traveler;
+
+	cout << "Chessboard Traveling: ";
+	cout << "Input string: " << input << " Converted string: " << traveler.ChessboardTraveling(input) << endl;
+	cout << endl;
+}
+
 
 int main(void) {
 
@@ -179,6 +190,8 @@ int main(void) {
 	test_letterCapitalize();
 
 	test_kaprekarConstant();
+
+	test_chessboardTraveling();
 
 	return 0;
 
