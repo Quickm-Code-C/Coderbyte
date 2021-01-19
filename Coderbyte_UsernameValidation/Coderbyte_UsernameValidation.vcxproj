@@ -153,6 +153,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Alphabet.cpp" />
+    <ClCompile Include="ChangeLetter.cpp" />
     <ClCompile Include="Coderbyte.cpp" />
     <ClCompile Include="NumberCheck.cpp" />
     <ClCompile Include="Reverse.cpp" />
@@ -164,6 +165,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Alphabet.h" />
+    <ClInclude Include="ChangeLetter.h" />
     <ClInclude Include="NumberCheck.h" />
     <ClInclude Include="Reverse.h" />
     <ClInclude Include="Summation.h" />

@@ -12,6 +12,7 @@
 #include "Alphabet.h"
 #include "Reverse.h"
 #include "Summation.h"
+#include "ChangeLetter.h"
 
 using namespace std;
 
@@ -96,6 +97,16 @@ void test_simpleAdding()
 	cout << endl;
 }
 
+void test_letterChanges()
+{
+	string			original = "coderbyte";
+	ChangeLetter	change;
+
+	cout << "Letter Changes: ";
+	cout << "Original string: " << original << " Converted string: " << change.LetterChanges(original) << endl;
+	cout << endl;
+}
+
 
 int main(void) {
 
@@ -114,6 +125,8 @@ int main(void) {
 	test_firstReverse();
 
 	test_simpleAdding();
+
+	test_letterChanges();
 
 	return 0;
 
