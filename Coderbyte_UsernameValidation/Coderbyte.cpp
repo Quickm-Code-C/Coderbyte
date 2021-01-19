@@ -15,6 +15,7 @@
 #include "ChangeLetter.h"
 #include "Symbols.h"
 #include "Factorial.h"
+#include "Kaprekar.h"
 
 using namespace std;
 
@@ -139,6 +140,18 @@ void test_letterCapitalize()
 	cout << " Converted string: " << capitalize.LetterCapitalize(input) << endl;
 	cout << endl;
 }
+
+void test_kaprekarConstant()
+{
+	int			value = 3524;
+	Kaprekar	calculator;
+
+	cout << "Kaprekar's Constant: ";
+	cout << "Value: " << value << " Factorial: " << calculator.KaprekarsConstant(value) << endl;
+	cout << endl;
+}
+
+
 int main(void) {
 
 	test_usernameValidation();
@@ -164,6 +177,8 @@ int main(void) {
 	test_firstFactorial();
 
 	test_letterCapitalize();
+
+	test_kaprekarConstant();
 
 	return 0;
 

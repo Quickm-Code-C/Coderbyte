@@ -156,6 +156,7 @@
     <ClCompile Include="ChangeLetter.cpp" />
     <ClCompile Include="Coderbyte.cpp" />
     <ClCompile Include="Factorial.cpp" />
+    <ClCompile Include="Kaprekar.cpp" />
     <ClCompile Include="NumberCheck.cpp" />
     <ClCompile Include="Reverse.cpp" />
     <ClCompile Include="Summation.cpp" />
@@ -169,6 +170,7 @@
     <ClInclude Include="Alphabet.h" />
     <ClInclude Include="ChangeLetter.h" />
     <ClInclude Include="Factorial.h" />
+    <ClInclude Include="Kaprekar.h" />
     <ClInclude Include="NumberCheck.h" />
     <ClInclude Include="Reverse.h" />
     <ClInclude Include="Summation.h" />
