@@ -5,6 +5,7 @@ The completed code challenges are:
  - Alphabet Soup
  - Check Numbers
  - First Reverse
+ - Letter Changes
  - Longest Word
  - Simple Adding
  - Time Convert
