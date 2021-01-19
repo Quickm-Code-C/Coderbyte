@@ -13,4 +13,5 @@ The completed code challenges are:
  - Simple Symbols
  - Time Convert
  - Username Validation
+ - Kaprekar's Constant (hard)
  - Matrix Determinant (hard)
