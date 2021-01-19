@@ -158,6 +158,7 @@
     <ClCompile Include="NumberCheck.cpp" />
     <ClCompile Include="Reverse.cpp" />
     <ClCompile Include="Summation.cpp" />
+    <ClCompile Include="Symbols.cpp" />
     <ClCompile Include="TimeConverter.cpp" />
     <ClCompile Include="WordLength.cpp" />
     <ClCompile Include="MatrixDeterminant.cpp" />
@@ -169,6 +170,7 @@
     <ClInclude Include="NumberCheck.h" />
     <ClInclude Include="Reverse.h" />
     <ClInclude Include="Summation.h" />
+    <ClInclude Include="Symbols.h" />
     <ClInclude Include="TimeConverter.h" />
     <ClInclude Include="WordLength.h" />
     <ClInclude Include="MatrixDeterminant.h" />

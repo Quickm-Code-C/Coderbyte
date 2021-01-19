@@ -13,6 +13,7 @@
 #include "Reverse.h"
 #include "Summation.h"
 #include "ChangeLetter.h"
+#include "Symbols.h"
 
 using namespace std;
 
@@ -107,6 +108,16 @@ void test_letterChanges()
 	cout << endl;
 }
 
+void test_simpleSymbols()
+{
+	string			input = "++d+===+c++==a";
+	Symbols			symbol;
+
+	cout << "Letter Changes: ";
+	cout << "Input string: " << input << " Converted string: " << symbol.SimpleSymbols(input) << endl;
+	cout << endl;
+}
+
 
 int main(void) {
 
@@ -127,6 +138,8 @@ int main(void) {
 	test_simpleAdding();
 
 	test_letterChanges();
+
+	test_simpleSymbols();
 
 	return 0;
 
