@@ -129,7 +129,16 @@ void test_firstFactorial()
 	cout << endl;
 }
 
+void test_letterCapitalize()
+{
+	string			input = "the fox is brown in color and very sly.";
+	ChangeLetter	capitalize;
 
+	cout << "Letter Capitalize: ";
+	cout << "Input string: " << input << endl;
+	cout << " Converted string: " << capitalize.LetterCapitalize(input) << endl;
+	cout << endl;
+}
 int main(void) {
 
 	test_usernameValidation();
@@ -153,6 +162,8 @@ int main(void) {
 	test_simpleSymbols();
 
 	test_firstFactorial();
+
+	test_letterCapitalize();
 
 	return 0;
 

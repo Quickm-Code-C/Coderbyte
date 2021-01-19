@@ -30,3 +30,23 @@ std::string ChangeLetter::LetterChanges(std::string str)
 
 	return str;
 }
+
+// Have the function LetterCapitalize(str) take the str parameter being passed 
+// and capitalize the first letter of each word. Words will be separated by 
+// only one space.
+
+std::string ChangeLetter::LetterCapitalize(std::string str)
+{
+	for (unsigned int index = 0; index < str.length(); index++) {
+		if (index == 0 && islower(str[index]))
+		{
+			str[index] = toupper(str[index]);
+		}
+
+		if (index > 0 && str[index - 1] == ' ') {
+			str[index] = toupper(str[index]);
+		}
+	}
+
+	return str;
+}
