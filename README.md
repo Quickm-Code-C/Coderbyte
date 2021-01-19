@@ -8,6 +8,7 @@ The completed code challenges are:
  - Letter Changes
  - Longest Word
  - Simple Adding
+ - Simple Symbols
  - Time Convert
  - Username Validation
  - Matrix Determinant (hard)
