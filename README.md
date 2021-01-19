@@ -6,6 +6,7 @@ The completed code challenges are:
  - Check Numbers
  - First Factorial
  - First Reverse
+ - Letter Capitalize
  - Letter Changes
  - Longest Word
  - Simple Adding
