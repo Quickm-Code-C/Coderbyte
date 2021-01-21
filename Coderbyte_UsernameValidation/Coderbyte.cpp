@@ -17,6 +17,7 @@
 #include "Factorial.h"
 #include "Kaprekar.h"
 #include "Chessboard.h"
+#include "StringIntersection.h"
 
 using namespace std;
 
@@ -162,6 +163,23 @@ void test_chessboardTraveling()
 	cout << endl;
 }
 
+void test_findIntersection()
+{
+	string strArr[2];
+	string one = "3, 4, 7, 11, 21";
+	string two = "4, 6, 7, 13, 21";
+
+	strArr[0] = one;
+	strArr[1] = two;
+
+	StringIntersection si;
+
+	cout << "FindIntersection: ";
+	cout << "Input: " << "first: " << strArr[0] << " , " << "second: " << strArr[1];
+	cout << " Intersection: " << si.FindIntersection(strArr) << endl;
+	cout << endl;
+}
+
 
 int main(void) {
 
@@ -192,6 +210,8 @@ int main(void) {
 	test_kaprekarConstant();
 
 	test_chessboardTraveling();
+
+	test_findIntersection();
 
 	return 0;
 

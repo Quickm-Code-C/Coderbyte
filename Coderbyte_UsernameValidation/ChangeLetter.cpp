@@ -1,5 +1,8 @@
 #include "ChangeLetter.h"
 #include <cctype>
+#include <vector>
+#include <sstream>
+
 using namespace std;
 
 // Have the function LetterChanges(str) take the str parameter being passed and 

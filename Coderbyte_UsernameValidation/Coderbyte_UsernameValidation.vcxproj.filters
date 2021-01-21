@@ -57,6 +57,9 @@
     <ClCompile Include="Chessboard.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="StringIntersection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="UsernameValidation.h">
@@ -96,6 +99,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Chessboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StringIntersection.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
