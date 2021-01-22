@@ -18,6 +18,7 @@
 #include "Kaprekar.h"
 #include "Chessboard.h"
 #include "StringIntersection.h"
+#include "MinStringRange.h"
 
 using namespace std;
 
@@ -180,6 +181,25 @@ void test_findIntersection()
 	cout << endl;
 }
 
+void test_minWIndowSubstring()
+{
+	string text = "ahffaksfajeeubsne";
+	string pattern = "jefaa";
+
+	string strArr[2] = { text, pattern };
+	MinStringRange  msr;
+
+	cout << "Minimum Window Substring: ";
+	cout << "Input: " << text << "  " << pattern << " " << msr.minWindowSubstring(strArr, 2) << endl;
+
+	text	= "aaffhkksemckelloe";
+	pattern = "fhea";
+	strArr[0] = text;
+	strArr[1] = pattern;
+	cout << "Input: " << text << "  " << pattern << " " << msr.minWindowSubstring(strArr, 2) << endl;
+	cout << endl;
+}
+
 
 int main(void) {
 
@@ -212,6 +232,8 @@ int main(void) {
 	test_chessboardTraveling();
 
 	test_findIntersection();
+
+	test_minWIndowSubstring();
 
 	return 0;
 

@@ -60,6 +60,9 @@
     <ClCompile Include="StringIntersection.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MinStringRange.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="UsernameValidation.h">
@@ -102,6 +105,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="StringIntersection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MinStringRange.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

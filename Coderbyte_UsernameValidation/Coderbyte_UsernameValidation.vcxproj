@@ -158,6 +158,7 @@
     <ClCompile Include="Coderbyte.cpp" />
     <ClCompile Include="Factorial.cpp" />
     <ClCompile Include="Kaprekar.cpp" />
+    <ClCompile Include="MinStringRange.cpp" />
     <ClCompile Include="NumberCheck.cpp" />
     <ClCompile Include="StringIntersection.cpp" />
     <ClCompile Include="Reverse.cpp" />
@@ -174,6 +175,7 @@
     <ClInclude Include="Chessboard.h" />
     <ClInclude Include="Factorial.h" />
     <ClInclude Include="Kaprekar.h" />
+    <ClInclude Include="MinStringRange.h" />
     <ClInclude Include="NumberCheck.h" />
     <ClInclude Include="StringIntersection.h" />
     <ClInclude Include="Reverse.h" />
