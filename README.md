@@ -14,6 +14,7 @@ The completed code challenges are:
  - Simple Symbols
  - Time Convert
  - Username Validation
+ - Minimum Window Substring (medium)
  - Chessboard Traveling (hard)
  - Kaprekar's Constant (hard)
  - Matrix Determinant (hard)
