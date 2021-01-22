@@ -85,7 +85,7 @@ vector<string> MinStringRange::extractWindows(const string str, int length)
 
 bool MinStringRange::isValidWindow(const string window, map<char, int> patternMap) 
 {
-	bool					isValid		= true;
+	bool			isValid		= true;
 	const map<char, int>	windowMap	= createCountMap(window);
 
 	for (map<char, int>::iterator it = patternMap.begin(); it != patternMap.end(); ++it)
