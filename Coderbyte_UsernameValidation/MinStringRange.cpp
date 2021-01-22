@@ -66,13 +66,16 @@ map<char, int> MinStringRange::createCountMap(const string str)
 	return countMap;
 }
 
-vector<string> MinStringRange::extractWindows(const string str, int length) {
+vector<string> MinStringRange::extractWindows(const string str, int length) 
+{
 	vector<string> windows = vector<string>();
 	int strLength = str.length();
 
 
-	for (int start = 0; start < strLength; start++) {
-		for (int end = start + length; end < strLength + 1; end++) {
+	for (int start = 0; start < strLength; start++) 
+	{
+		for (int end = start + length; end < strLength + 1; end++) 
+		{
 			windows.push_back(str.substr(start, end - start));
 		}
 	}
