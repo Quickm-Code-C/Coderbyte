@@ -10,6 +10,7 @@ The completed code challenges are:
  - Letter Capitalize
  - Letter Changes
  - Longest Word
+ - Power of 2
  - Quaestion Marks
  - Simple Adding
  - Simple Symbols
