@@ -69,6 +69,9 @@
     <ClCompile Include="Exponent2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MathProduct.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="UsernameValidation.h">
@@ -120,6 +123,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Exponent2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MathProduct.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

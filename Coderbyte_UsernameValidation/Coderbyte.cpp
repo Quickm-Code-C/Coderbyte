@@ -21,6 +21,7 @@
 #include "MinStringRange.h"
 #include "QuestionMarkSum.h"
 #include "Exponent2.h"
+#include "MathProduct.h"
 
 using namespace std;
 
@@ -243,6 +244,24 @@ void test_powerOfTwo()
 
 }
 
+void test_productDigits()
+{
+	int			value = 32;
+	MathProduct	mp;
+
+	cout << "Product Digits: " << endl;
+	cout << "Value: " << value << " Result: " << mp.productDigits(value) << endl;
+
+	value = 23;
+	cout << "Value: " << value << " Result: " << mp.productDigits(value) << endl;
+	cout << endl;
+
+	value = 5000;
+	cout << "Value: " << value << " Result: " << mp.productDigits(value) << endl;
+	cout << endl;
+
+}
+
 
 int main(void) {
 
@@ -281,6 +300,8 @@ int main(void) {
 	test_QuestionMarks();
 
 	test_powerOfTwo();
+
+	test_productDigits();
 
 	return 0;
 

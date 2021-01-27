@@ -159,6 +159,7 @@
     <ClCompile Include="Exponent2.cpp" />
     <ClCompile Include="Factorial.cpp" />
     <ClCompile Include="Kaprekar.cpp" />
+    <ClCompile Include="MathProduct.cpp" />
     <ClCompile Include="MinStringRange.cpp" />
     <ClCompile Include="NumberCheck.cpp" />
     <ClCompile Include="QuestionMarkSum.cpp" />
@@ -178,6 +179,7 @@
     <ClInclude Include="Exponent2.h" />
     <ClInclude Include="Factorial.h" />
     <ClInclude Include="Kaprekar.h" />
+    <ClInclude Include="MathProduct.h" />
     <ClInclude Include="MinStringRange.h" />
     <ClInclude Include="NumberCheck.h" />
     <ClInclude Include="QuestionMarkSum.h" />
