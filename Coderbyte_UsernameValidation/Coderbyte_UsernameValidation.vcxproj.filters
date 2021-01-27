@@ -66,6 +66,9 @@
     <ClCompile Include="QuestionMarkSum.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Exponent2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="UsernameValidation.h">
@@ -114,6 +117,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="QuestionMarkSum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Exponent2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

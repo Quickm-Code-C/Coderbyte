@@ -20,6 +20,7 @@
 #include "StringIntersection.h"
 #include "MinStringRange.h"
 #include "QuestionMarkSum.h"
+#include "Exponent2.h"
 
 using namespace std;
 
@@ -228,6 +229,20 @@ void test_QuestionMarks()
 	// 5??aaaaaaaaaaaaaaaaaaa?5?a??5	true
 }
 
+void test_powerOfTwo()
+{
+	int			value = 32;
+	Exponent2	power;
+
+	cout << "Power of Two: ";
+	cout << "Value: " << value << " Result: " << power.powersofTwo(value) << endl;
+
+	value = 56;
+	cout << "Value: " << value << " Result: " << power.powersofTwo(value) << endl;
+	cout << endl;
+
+}
+
 
 int main(void) {
 
@@ -264,6 +279,8 @@ int main(void) {
 	test_minWIndowSubstring();
 
 	test_QuestionMarks();
+
+	test_powerOfTwo();
 
 	return 0;
 

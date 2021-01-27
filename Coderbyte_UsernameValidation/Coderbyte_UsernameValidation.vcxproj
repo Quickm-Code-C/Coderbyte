@@ -156,6 +156,7 @@
     <ClCompile Include="ChangeLetter.cpp" />
     <ClCompile Include="Chessboard.cpp" />
     <ClCompile Include="Coderbyte.cpp" />
+    <ClCompile Include="Exponent2.cpp" />
     <ClCompile Include="Factorial.cpp" />
     <ClCompile Include="Kaprekar.cpp" />
     <ClCompile Include="MinStringRange.cpp" />
@@ -174,6 +175,7 @@
     <ClInclude Include="Alphabet.h" />
     <ClInclude Include="ChangeLetter.h" />
     <ClInclude Include="Chessboard.h" />
+    <ClInclude Include="Exponent2.h" />
     <ClInclude Include="Factorial.h" />
     <ClInclude Include="Kaprekar.h" />
     <ClInclude Include="MinStringRange.h" />
