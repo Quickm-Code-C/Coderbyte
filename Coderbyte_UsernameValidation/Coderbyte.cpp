@@ -262,6 +262,23 @@ void test_productDigits()
 
 }
 
+void test_otherProducts()
+{
+	int				arr[5] = { 1,2,3,4,5 };
+	MathProduct		mp;
+	cout << "Other Products: " << endl;
+	cout << "Array: " << "[";
+	for (auto const& value : arr)
+	{
+		cout << value;
+		if (value != arr[4])
+		{
+			cout << ",";
+		}
+	}
+	std::cout << "]";
+	cout << " Result: " << mp.otherProducts(arr, 5) << endl;
+}
 
 int main(void) {
 
@@ -302,6 +319,8 @@ int main(void) {
 	test_powerOfTwo();
 
 	test_productDigits();
+
+	test_otherProducts();
 
 	return 0;
 
