@@ -160,6 +160,7 @@
     <ClCompile Include="Kaprekar.cpp" />
     <ClCompile Include="MinStringRange.cpp" />
     <ClCompile Include="NumberCheck.cpp" />
+    <ClCompile Include="QuestionMarkSum.cpp" />
     <ClCompile Include="StringIntersection.cpp" />
     <ClCompile Include="Reverse.cpp" />
     <ClCompile Include="Summation.cpp" />
@@ -177,6 +178,7 @@
     <ClInclude Include="Kaprekar.h" />
     <ClInclude Include="MinStringRange.h" />
     <ClInclude Include="NumberCheck.h" />
+    <ClInclude Include="QuestionMarkSum.h" />
     <ClInclude Include="StringIntersection.h" />
     <ClInclude Include="Reverse.h" />
     <ClInclude Include="Summation.h" />

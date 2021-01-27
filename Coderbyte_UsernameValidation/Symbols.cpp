@@ -13,7 +13,7 @@ using namespace std;
 std::string Symbols::SimpleSymbols(std::string str)
 {
 	string result = "false";
-	for (int index = 0; index < str.length(); ++index) 
+	for (unsigned int index = 0; index < str.length(); ++index) 
 	{
 		if (isalpha(str[index])) 
 		{

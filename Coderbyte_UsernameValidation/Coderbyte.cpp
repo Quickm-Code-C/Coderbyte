@@ -19,6 +19,7 @@
 #include "Chessboard.h"
 #include "StringIntersection.h"
 #include "MinStringRange.h"
+#include "QuestionMarkSum.h"
 
 using namespace std;
 
@@ -200,6 +201,33 @@ void test_minWIndowSubstring()
 	cout << endl;
 }
 
+void test_QuestionMarks()
+{
+	string text = "arrb6???4xxbl5???eee5";
+
+	QuestionMarkSum qmSum;
+
+	cout << "Question Marks Sum: ";
+	cout << "Input: " << text << " " << "Result: "<< qmSum.questionsMarks(text) << endl;
+
+	text = "aaaaaaarrrrr??????";
+	cout << "Input: " << text << " " << "Result: " << qmSum.questionsMarks(text) << endl;
+
+	text = "9???1???9??1???9";
+	cout << "Input: " << text << " " << "Result: " << qmSum.questionsMarks(text) << endl;
+
+	text = "5??aaaaaaaaaaaaaaaaaaa?5?5";
+	cout << "Input: " << text << " " << "Result: " << qmSum.questionsMarks(text) << endl;
+
+
+	text = "mbbv???????????4??????ddsdsdcc9";
+	cout << "Input: " << text << " " << "Result: " << qmSum.questionsMarks(text) << endl;
+	cout << endl;
+
+	// 9???1???9???1???9				true  
+	// 5??aaaaaaaaaaaaaaaaaaa?5?a??5	true
+}
+
 
 int main(void) {
 
@@ -234,6 +262,8 @@ int main(void) {
 	test_findIntersection();
 
 	test_minWIndowSubstring();
+
+	test_QuestionMarks();
 
 	return 0;
 
