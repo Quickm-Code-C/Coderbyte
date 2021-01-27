@@ -10,9 +10,10 @@ The completed code challenges are:
  - Letter Capitalize
  - Letter Changes
  - Longest Word
+ - Other Products
  - Power of 2
  - Product Digits
- - Quaestion Marks
+ - Question Marks
  - Simple Adding
  - Simple Symbols
  - Time Convert
