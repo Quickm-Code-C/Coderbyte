@@ -11,6 +11,7 @@ The completed code challenges are:
  - Letter Changes
  - Longest Word
  - Power of 2
+ - Product Digits
  - Quaestion Marks
  - Simple Adding
  - Simple Symbols
