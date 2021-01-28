@@ -3,6 +3,7 @@ Coderbyte code challenges: This repository contains code solutions for code chal
 
 The completed code challenges are:
  - Alphabet Soup
+ - ArithGeo
  - Check Numbers
  - Find Intersection
  - First Factorial
