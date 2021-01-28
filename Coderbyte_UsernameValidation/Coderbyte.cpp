@@ -290,6 +290,7 @@ void test_otherProducts()
 	test_printArray(arr, 5);
 
 	cout << " Result: " << mp.otherProducts(arr, 5) << endl;
+	cout << endl;
 }
 
 void test_movingMedian()
@@ -298,9 +299,10 @@ void test_movingMedian()
 	int				length = 9;
 	MedianMovement	mm;
 
-	cout << "Other Products: " << endl;
+	cout << "Moving Medians: " << endl;
 	test_printArray(arr, length);
 	cout << " Result: " << mm.movingMedian(arr, length) << endl;
+	cout << endl;
 
 	// expected results : 1,2,3,5,6,6,4,3
 }
@@ -350,5 +352,4 @@ int main(void) {
 	test_movingMedian();
 
 	return 0;
-
 }
