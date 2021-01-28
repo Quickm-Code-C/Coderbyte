@@ -158,6 +158,7 @@
     <ClCompile Include="Coderbyte.cpp" />
     <ClCompile Include="Exponent2.cpp" />
     <ClCompile Include="Factorial.cpp" />
+    <ClCompile Include="MathSequence.cpp" />
     <ClCompile Include="Kaprekar.cpp" />
     <ClCompile Include="MathProduct.cpp" />
     <ClCompile Include="MedianMovement.cpp" />
@@ -179,6 +180,7 @@
     <ClInclude Include="Chessboard.h" />
     <ClInclude Include="Exponent2.h" />
     <ClInclude Include="Factorial.h" />
+    <ClInclude Include="MathSequence.h" />
     <ClInclude Include="Kaprekar.h" />
     <ClInclude Include="MathProduct.h" />
     <ClInclude Include="MedianMovement.h" />

@@ -25,6 +25,8 @@
 #include "Exponent2.h"
 #include "MathProduct.h"
 #include "MedianMovement.h"
+#include "MathSequence.h"
+
 
 using namespace std;
 
@@ -307,6 +309,19 @@ void test_movingMedian()
 	// expected results : 1,2,3,5,6,6,4,3
 }
 
+void test_mathSequence()
+{
+	int				arr[4] = { 2,4,8,16 };
+	int				length = 4;
+	MathSequence	sequence;
+
+	cout << "ArithGeo: " << endl;
+	test_printArray(arr, length);
+	cout << " Result: " << sequence.ArithGeo(arr, length) << endl;
+	cout << endl;
+
+}
+
 int main(void) {
 
 	test_usernameValidation();
@@ -350,6 +365,8 @@ int main(void) {
 	test_otherProducts();
 
 	test_movingMedian();
+
+	test_mathSequence();
 
 	return 0;
 }
