@@ -4,6 +4,8 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
+#include <sstream>
 #include "UsernameValidation.h"
 #include "MatrixDeterminant.h"
 #include "WordLength.h"
@@ -22,9 +24,26 @@
 #include "QuestionMarkSum.h"
 #include "Exponent2.h"
 #include "MathProduct.h"
+#include "MedianMovement.h"
 
 using namespace std;
 
+void test_printArray(int* arr, int length)
+{
+	vector<int>   container(arr, arr + length);
+
+	cout << "Array: " << "[";
+	string str;
+
+	for (auto const& value : container)
+	{
+		str += to_string(value);
+		str += ",";
+	}
+
+	str.pop_back();
+	std::cout << str << "]";
+}
 void test_usernameValidation()
 {
 	// Username Validation: keep this function call here
@@ -267,17 +286,23 @@ void test_otherProducts()
 	int				arr[5] = { 1,2,3,4,5 };
 	MathProduct		mp;
 	cout << "Other Products: " << endl;
-	cout << "Array: " << "[";
-	for (auto const& value : arr)
-	{
-		cout << value;
-		if (value != arr[4])
-		{
-			cout << ",";
-		}
-	}
-	std::cout << "]";
+
+	test_printArray(arr, 5);
+
 	cout << " Result: " << mp.otherProducts(arr, 5) << endl;
+}
+
+void test_movingMedian()
+{
+	int				arr[9] = { 3, 1, 3, 5, 10, 6, 4, 3, 1 };
+	int				length = 9;
+	MedianMovement	mm;
+
+	cout << "Other Products: " << endl;
+	test_printArray(arr, length);
+	cout << " Result: " << mm.movingMedian(arr, length) << endl;
+
+	// expected results : 1,2,3,5,6,6,4,3
 }
 
 int main(void) {
@@ -321,6 +346,8 @@ int main(void) {
 	test_productDigits();
 
 	test_otherProducts();
+
+	test_movingMedian();
 
 	return 0;
 
