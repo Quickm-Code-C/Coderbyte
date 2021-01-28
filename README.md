@@ -10,6 +10,7 @@ The completed code challenges are:
  - Letter Capitalize
  - Letter Changes
  - Longest Word
+ - Moving Median
  - Other Products
  - Power of 2
  - Product Digits
