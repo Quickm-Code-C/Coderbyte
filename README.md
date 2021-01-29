@@ -12,6 +12,7 @@ The completed code challenges are:
  - Letter Changes
  - Longest Word
  - Moving Median
+ - Number Encoding (medium)
  - Other Products
  - Power of 2
  - Product Digits
