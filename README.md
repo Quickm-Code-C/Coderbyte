@@ -16,8 +16,10 @@ The completed code challenges are:
  - Power of 2
  - Product Digits
  - Question Marks
+ - Remove Brackets
  - Simple Adding
  - Simple Symbols
+ - String Periods
  - Time Convert
  - Username Validation
  - Minimum Window Substring (medium)
