@@ -165,6 +165,7 @@
     <ClCompile Include="MedianMovement.cpp" />
     <ClCompile Include="MinStringRange.cpp" />
     <ClCompile Include="NumberCheck.cpp" />
+    <ClCompile Include="NumberEncoder.cpp" />
     <ClCompile Include="QuestionMarkSum.cpp" />
     <ClCompile Include="StringIntersection.cpp" />
     <ClCompile Include="Reverse.cpp" />
@@ -189,6 +190,7 @@
     <ClInclude Include="MedianMovement.h" />
     <ClInclude Include="MinStringRange.h" />
     <ClInclude Include="NumberCheck.h" />
+    <ClInclude Include="NumberEncoder.h" />
     <ClInclude Include="QuestionMarkSum.h" />
     <ClInclude Include="StringIntersection.h" />
     <ClInclude Include="Reverse.h" />

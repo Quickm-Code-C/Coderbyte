@@ -28,6 +28,7 @@
 #include "MathSequence.h"
 #include "Brackets.h"
 #include "StringPeriod.h"
+#include "NumberEncoder.h"
 
 using namespace std;
 
@@ -47,6 +48,7 @@ void test_printArray(int* arr, int length)
 	str.pop_back();
 	std::cout << str << "]";
 }
+
 void test_usernameValidation()
 {
 	// Username Validation: keep this function call here
@@ -206,7 +208,7 @@ void test_findIntersection()
 	cout << endl;
 }
 
-void test_minWIndowSubstring()
+void test_minWindowSubstring()
 {
 	string text = "ahffaksfajeeubsne";
 	string pattern = "jefaa";
@@ -358,6 +360,21 @@ void test_stringPeriods()
 
 }
 
+void test_numberCoding()
+{
+	string			str			= "af5c a#!";
+	NumberEncoder	encoder;
+
+	cout << "Number Coding: " << endl; 
+	cout << "Input: " << str << " Result: " << encoder.NumberEncoding(str) << endl;
+
+	str = "$*#&^$";
+	cout << "Input: " << str << " Result: " << encoder.NumberEncoding(str) << endl;
+
+
+	cout << endl;
+}
+
 int main(void) {
 
 	test_usernameValidation();
@@ -390,7 +407,7 @@ int main(void) {
 
 	test_findIntersection();
 
-	test_minWIndowSubstring();
+	test_minWindowSubstring();
 
 	test_QuestionMarks();
 
@@ -407,6 +424,8 @@ int main(void) {
 	test_removeBrackets();
 
 	test_stringPeriods();
+
+	test_numberCoding();
 
 	return 0;
 }
