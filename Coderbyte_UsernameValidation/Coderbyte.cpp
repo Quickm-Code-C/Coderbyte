@@ -26,7 +26,8 @@
 #include "MathProduct.h"
 #include "MedianMovement.h"
 #include "MathSequence.h"
-
+#include "Brackets.h"
+#include "StringPeriod.h"
 
 using namespace std;
 
@@ -319,6 +320,41 @@ void test_mathSequence()
 	test_printArray(arr, length);
 	cout << " Result: " << sequence.ArithGeo(arr, length) << endl;
 	cout << endl;
+}
+
+void test_removeBrackets()
+{
+	string		str = "())";
+	Brackets	b;
+
+	cout << "Remove Brackets: " << endl;
+	cout << "Input: " << str << " Result: " << b.RemoveBrackets(str) << endl;
+
+	str = "(())";
+	cout << "Input: " << str << " Result: " << b.RemoveBrackets(str) << endl;
+
+	str = ")(()";
+	cout << "Input: " << str << " Result: " << b.RemoveBrackets(str) << endl;
+	cout << endl;
+}
+
+void test_stringPeriods()
+{
+	string			str = "abcababcababcab";
+	StringPeriod	sp;
+
+	cout << "String Periods: " << endl;
+	cout << "Input: " << str << " Result: " << sp.StringPeriods(str) << endl;
+
+	str = "abababababab";
+	cout << "Input: " << str << " Result: " << sp.StringPeriods(str) << endl;
+
+	str = "abcxabc";
+	cout << "Input: " << str << " Result: " << sp.StringPeriods(str) << endl;
+
+	str = "affedaaffed";
+	cout << "Input: " << str << " Result: " << sp.StringPeriods(str) << endl;
+	cout << endl;
 
 }
 
@@ -367,6 +403,10 @@ int main(void) {
 	test_movingMedian();
 
 	test_mathSequence();
+
+	test_removeBrackets();
+
+	test_stringPeriods();
 
 	return 0;
 }

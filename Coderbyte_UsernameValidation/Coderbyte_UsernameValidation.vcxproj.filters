@@ -78,6 +78,12 @@
     <ClCompile Include="MathSequence.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Brackets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StringPeriod.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="UsernameValidation.h">
@@ -138,6 +144,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MathSequence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Brackets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StringPeriod.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

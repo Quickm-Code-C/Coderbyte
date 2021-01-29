@@ -153,6 +153,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Alphabet.cpp" />
+    <ClCompile Include="Brackets.cpp" />
     <ClCompile Include="ChangeLetter.cpp" />
     <ClCompile Include="Chessboard.cpp" />
     <ClCompile Include="Coderbyte.cpp" />
@@ -167,6 +168,7 @@
     <ClCompile Include="QuestionMarkSum.cpp" />
     <ClCompile Include="StringIntersection.cpp" />
     <ClCompile Include="Reverse.cpp" />
+    <ClCompile Include="StringPeriod.cpp" />
     <ClCompile Include="Summation.cpp" />
     <ClCompile Include="Symbols.cpp" />
     <ClCompile Include="TimeConverter.cpp" />
@@ -176,6 +178,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Alphabet.h" />
+    <ClInclude Include="Brackets.h" />
     <ClInclude Include="ChangeLetter.h" />
     <ClInclude Include="Chessboard.h" />
     <ClInclude Include="Exponent2.h" />
@@ -189,6 +192,7 @@
     <ClInclude Include="QuestionMarkSum.h" />
     <ClInclude Include="StringIntersection.h" />
     <ClInclude Include="Reverse.h" />
+    <ClInclude Include="StringPeriod.h" />
     <ClInclude Include="Summation.h" />
     <ClInclude Include="Symbols.h" />
     <ClInclude Include="TimeConverter.h" />
