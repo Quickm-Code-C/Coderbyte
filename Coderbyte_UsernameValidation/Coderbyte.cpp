@@ -29,6 +29,7 @@
 #include "Brackets.h"
 #include "StringPeriod.h"
 #include "NumberEncoder.h"
+#include "StringReducer.h"
 
 using namespace std;
 
@@ -375,6 +376,19 @@ void test_numberCoding()
 	cout << endl;
 }
 
+void test_stringReducer()
+{
+	string			str = "cab";
+	StringReducer	reducer;
+
+	cout << "Reducing String: " << endl;
+	cout << "Input: " << str << " Result: " << reducer.StringReduction(str) << endl;
+
+	str = "cccc";
+	cout << "Input: " << str << " Result: " << reducer.StringReduction(str) << endl;
+	cout << endl;
+}
+
 int main(void) {
 
 	test_usernameValidation();
@@ -426,6 +440,8 @@ int main(void) {
 	test_stringPeriods();
 
 	test_numberCoding();
+
+	test_stringReducer();
 
 	return 0;
 }

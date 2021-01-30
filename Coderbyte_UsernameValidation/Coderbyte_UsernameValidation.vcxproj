@@ -170,6 +170,7 @@
     <ClCompile Include="StringIntersection.cpp" />
     <ClCompile Include="Reverse.cpp" />
     <ClCompile Include="StringPeriod.cpp" />
+    <ClCompile Include="StringReducer.cpp" />
     <ClCompile Include="Summation.cpp" />
     <ClCompile Include="Symbols.cpp" />
     <ClCompile Include="TimeConverter.cpp" />
@@ -195,6 +196,7 @@
     <ClInclude Include="StringIntersection.h" />
     <ClInclude Include="Reverse.h" />
     <ClInclude Include="StringPeriod.h" />
+    <ClInclude Include="StringReducer.h" />
     <ClInclude Include="Summation.h" />
     <ClInclude Include="Symbols.h" />
     <ClInclude Include="TimeConverter.h" />
