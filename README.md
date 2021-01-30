@@ -5,6 +5,7 @@ The completed code challenges are:
  - Alphabet Soup
  - ArithGeo
  - Check Numbers
+ - Consecutive (medium)
  - Find Intersection
  - First Factorial
  - First Reverse
