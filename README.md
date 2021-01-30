@@ -15,6 +15,7 @@ The completed code challenges are:
  - Number Encoding (medium)
  - Other Products
  - Power of 2
+ - Prime Mover (medium)
  - Product Digits
  - Question Marks
  - Remove Brackets
