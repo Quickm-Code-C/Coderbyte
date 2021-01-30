@@ -166,6 +166,7 @@
     <ClCompile Include="MinStringRange.cpp" />
     <ClCompile Include="NumberCheck.cpp" />
     <ClCompile Include="NumberEncoder.cpp" />
+    <ClCompile Include="PrimeNumber.cpp" />
     <ClCompile Include="QuestionMarkSum.cpp" />
     <ClCompile Include="StringIntersection.cpp" />
     <ClCompile Include="Reverse.cpp" />
@@ -192,6 +193,7 @@
     <ClInclude Include="MinStringRange.h" />
     <ClInclude Include="NumberCheck.h" />
     <ClInclude Include="NumberEncoder.h" />
+    <ClInclude Include="PrimeNumber.h" />
     <ClInclude Include="QuestionMarkSum.h" />
     <ClInclude Include="StringIntersection.h" />
     <ClInclude Include="Reverse.h" />

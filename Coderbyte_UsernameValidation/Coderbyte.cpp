@@ -30,6 +30,7 @@
 #include "StringPeriod.h"
 #include "NumberEncoder.h"
 #include "StringReducer.h"
+#include "PrimeNumber.h"
 
 using namespace std;
 
@@ -389,6 +390,26 @@ void test_stringReducer()
 	cout << endl;
 }
 
+void test_primeMover()
+{
+	unsigned int	num = 16;
+	PrimeNumber		pn;
+
+	cout << "Prime Movers: " << endl;
+	cout << "Input: " << num << " Prime Value: " << pn.PrimeMover(num) << endl;
+
+	num = 9;
+	cout << "Input: " << num << " Prime Value: " << pn.PrimeMover(num) << endl;
+
+	num = 100;
+	cout << "Input: " << num << " Prime Value: " << pn.PrimeMover(num) << endl;
+
+	num = 1000;
+	cout << "Input: " << num << " Prime Value: " << pn.PrimeMover(num) << endl;
+
+	cout << endl;
+}
+
 int main(void) {
 
 	test_usernameValidation();
@@ -442,6 +463,8 @@ int main(void) {
 	test_numberCoding();
 
 	test_stringReducer();
+
+	test_primeMover();
 
 	return 0;
 }
