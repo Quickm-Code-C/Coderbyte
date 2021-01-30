@@ -157,6 +157,7 @@
     <ClCompile Include="ChangeLetter.cpp" />
     <ClCompile Include="Chessboard.cpp" />
     <ClCompile Include="Coderbyte.cpp" />
+    <ClCompile Include="ConsecutiveNumbers.cpp" />
     <ClCompile Include="Exponent2.cpp" />
     <ClCompile Include="Factorial.cpp" />
     <ClCompile Include="MathSequence.cpp" />
@@ -184,6 +185,7 @@
     <ClInclude Include="Brackets.h" />
     <ClInclude Include="ChangeLetter.h" />
     <ClInclude Include="Chessboard.h" />
+    <ClInclude Include="ConsecutiveNumbers.h" />
     <ClInclude Include="Exponent2.h" />
     <ClInclude Include="Factorial.h" />
     <ClInclude Include="MathSequence.h" />

@@ -31,6 +31,7 @@
 #include "NumberEncoder.h"
 #include "StringReducer.h"
 #include "PrimeNumber.h"
+#include "ConsecutiveNumbers.h"
 
 using namespace std;
 
@@ -410,6 +411,28 @@ void test_primeMover()
 	cout << endl;
 }
 
+void test_consecutive()
+{
+	int					arr[3] = { 4, 8, 6 };
+	int					length = 3;
+	ConsecutiveNumbers	numbers;
+
+	cout << "Consecutive Numbers: " << endl;
+	test_printArray(arr, length);
+	cout << " Result: " << numbers.Consecutive(arr, length) << endl;
+
+	int					arr2[6] = { 1, 5, 3, 7, 2, 9 };
+	length						= 6;
+	test_printArray(arr2, length);
+	cout << " Result: " << numbers.Consecutive(arr2, length) << endl; 
+
+	int					arr3[3] = { -2, 10, 4 };
+	length						= 3;
+	test_printArray(arr3, length);
+	cout << " Result: " << numbers.Consecutive(arr3, length) << endl;
+	cout << endl; 
+}
+
 int main(void) {
 
 	test_usernameValidation();
@@ -465,6 +488,8 @@ int main(void) {
 	test_stringReducer();
 
 	test_primeMover();
+
+	test_consecutive();
 
 	return 0;
 }
