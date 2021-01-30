@@ -21,6 +21,7 @@ The completed code challenges are:
  - Simple Adding
  - Simple Symbols
  - String Periods
+ - String Reduction (medium)
  - Time Convert
  - Username Validation
  - Minimum Window Substring (medium)
