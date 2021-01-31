@@ -169,6 +169,7 @@
     <ClCompile Include="NumberEncoder.cpp" />
     <ClCompile Include="PrimeNumber.cpp" />
     <ClCompile Include="QuestionMarkSum.cpp" />
+    <ClCompile Include="StringCompression.cpp" />
     <ClCompile Include="StringIntersection.cpp" />
     <ClCompile Include="Reverse.cpp" />
     <ClCompile Include="StringPeriod.cpp" />
@@ -198,6 +199,7 @@
     <ClInclude Include="NumberEncoder.h" />
     <ClInclude Include="PrimeNumber.h" />
     <ClInclude Include="QuestionMarkSum.h" />
+    <ClInclude Include="StringCompression.h" />
     <ClInclude Include="StringIntersection.h" />
     <ClInclude Include="Reverse.h" />
     <ClInclude Include="StringPeriod.h" />

@@ -33,6 +33,7 @@
 #include "PrimeNumber.h"
 #include "ConsecutiveNumbers.h"
 #include "StringUniqueSubstring.h"
+#include "StringCompression.h"
 
 using namespace std;
 
@@ -445,7 +446,19 @@ void test_kUniqueChars()
 	str = "4aaffaacccerrfffaacca";
 	cout << "Input: " << str << " Result: " << unique.KUniqueCharacters(str) << endl;
 	cout << endl;
+}
 
+void test_runLength()
+{
+	string					str = "wwwggopp";
+	StringCompression		compress;
+
+	cout << "K Unique Chars: " << endl;
+	cout << "Input: " << str << " Result: " << compress.RunLength(str) << endl;
+
+	str = "wwwbbbw";
+	cout << "Input: " << str << " Result: " << compress.RunLength(str) << endl;
+	cout << endl; // wwwbbbw
 }
 
 int main(void) {
@@ -507,6 +520,8 @@ int main(void) {
 	test_consecutive();
 
 	test_kUniqueChars();
+
+	test_runLength();
 
 	return 0;
 }
