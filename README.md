@@ -9,6 +9,7 @@ The completed code challenges are:
  - Find Intersection
  - First Factorial
  - First Reverse
+ - K Unique Chars (medium)
  - Letter Capitalize
  - Letter Changes
  - Longest Word
