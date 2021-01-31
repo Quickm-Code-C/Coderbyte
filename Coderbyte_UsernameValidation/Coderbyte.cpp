@@ -32,6 +32,7 @@
 #include "StringReducer.h"
 #include "PrimeNumber.h"
 #include "ConsecutiveNumbers.h"
+#include "StringUniqueSubstring.h"
 
 using namespace std;
 
@@ -433,6 +434,20 @@ void test_consecutive()
 	cout << endl; 
 }
 
+void test_kUniqueChars()
+{
+	string					str = "2aabbacbaa";
+	StringUniqueSubstring	unique;
+
+	cout << "K Unique Chars: " << endl;
+	cout << "Input: " << str << " Result: " << unique.KUniqueCharacters(str) << endl;
+
+	str = "4aaffaacccerrfffaacca";
+	cout << "Input: " << str << " Result: " << unique.KUniqueCharacters(str) << endl;
+	cout << endl;
+
+}
+
 int main(void) {
 
 	test_usernameValidation();
@@ -490,6 +505,8 @@ int main(void) {
 	test_primeMover();
 
 	test_consecutive();
+
+	test_kUniqueChars();
 
 	return 0;
 }

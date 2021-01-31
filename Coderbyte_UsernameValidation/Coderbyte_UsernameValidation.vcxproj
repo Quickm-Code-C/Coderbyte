@@ -173,6 +173,7 @@
     <ClCompile Include="Reverse.cpp" />
     <ClCompile Include="StringPeriod.cpp" />
     <ClCompile Include="StringReducer.cpp" />
+    <ClCompile Include="StringUniqueSubstring.cpp" />
     <ClCompile Include="Summation.cpp" />
     <ClCompile Include="Symbols.cpp" />
     <ClCompile Include="TimeConverter.cpp" />
@@ -201,6 +202,7 @@
     <ClInclude Include="Reverse.h" />
     <ClInclude Include="StringPeriod.h" />
     <ClInclude Include="StringReducer.h" />
+    <ClInclude Include="StringUniqueSubstring.h" />
     <ClInclude Include="Summation.h" />
     <ClInclude Include="Symbols.h" />
     <ClInclude Include="TimeConverter.h" />
