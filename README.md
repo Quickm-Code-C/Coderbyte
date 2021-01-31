@@ -21,6 +21,7 @@ The completed code challenges are:
  - Product Digits
  - Question Marks
  - Remove Brackets
+ - Run Length (medium)
  - Simple Adding
  - Simple Symbols
  - String Periods
