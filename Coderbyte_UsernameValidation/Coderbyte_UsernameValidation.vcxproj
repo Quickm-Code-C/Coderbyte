@@ -178,6 +178,7 @@
     <ClCompile Include="Summation.cpp" />
     <ClCompile Include="Symbols.cpp" />
     <ClCompile Include="TimeConverter.cpp" />
+    <ClCompile Include="TreeGraphs.cpp" />
     <ClCompile Include="WordLength.cpp" />
     <ClCompile Include="MatrixDeterminant.cpp" />
     <ClCompile Include="UsernameValidation.cpp" />
@@ -208,6 +209,7 @@
     <ClInclude Include="Summation.h" />
     <ClInclude Include="Symbols.h" />
     <ClInclude Include="TimeConverter.h" />
+    <ClInclude Include="TreeGraphs.h" />
     <ClInclude Include="WordLength.h" />
     <ClInclude Include="MatrixDeterminant.h" />
     <ClInclude Include="UsernameValidation.h" />

@@ -34,6 +34,7 @@
 #include "ConsecutiveNumbers.h"
 #include "StringUniqueSubstring.h"
 #include "StringCompression.h"
+#include "TreeGraphs.h"
 
 using namespace std;
 
@@ -52,6 +53,23 @@ void test_printArray(int* arr, int length)
 
 	str.pop_back();
 	std::cout << str << "]";
+}
+
+void test_printArray(string *arr, int length)
+{
+	vector<string>   container(arr, arr + length);
+
+	cout << "Array: " << "[";
+	string str;
+
+	for (auto const& value : container)
+	{
+		str += value;
+		str += ",";
+	}
+
+	str.pop_back();
+	std::cout << str << "] ";
 }
 
 void test_usernameValidation()
@@ -461,6 +479,30 @@ void test_runLength()
 	cout << endl; // wwwbbbw
 }
 
+void test_treeConstructor()
+{
+	string		strArr[] = { "(1,2)", "(2,4)", "(7,2)" };
+	int         length = 3;
+	TreeGraphs  tree;
+
+	cout << "Tree Constructor:" << endl;
+	test_printArray(strArr, length);
+	cout << "Result: " << tree.TreeConstructor(strArr, length) << endl;
+
+	string		strArr2[] = { "(1,2)", "(9,2)", "(2,4)", "(7,2)" };
+	length				  = 4;
+	test_printArray(strArr2, length);
+	cout << "Result: " << tree.TreeConstructor(strArr2, length) << endl;
+
+	string		strArr3[] = { "(1,2)", "(2,4)", "(5,7)", "(7,2)", "(9,5)" };
+	length = 5;
+	test_printArray(strArr3, length);
+	cout << "Result: " << tree.TreeConstructor(strArr3, length) << endl;
+	cout << endl;
+
+	
+}
+
 int main(void) {
 
 	test_usernameValidation();
@@ -522,6 +564,8 @@ int main(void) {
 	test_kUniqueChars();
 
 	test_runLength();
+
+	test_treeConstructor();
 
 	return 0;
 }
