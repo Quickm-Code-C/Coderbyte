@@ -4,6 +4,7 @@
 
 using namespace std;
 
+
 // For this challenge you will determine if an array of integer pairs can 
 // form a binary tree properly.
 
@@ -80,6 +81,44 @@ std::string TreeGraphs::TreeConstructor(std::string strArr[], int length)
 	return result;
 }
 
+
+// For this challenge you will traverse a binary tree and determine if it is symmetric.
+// The function SymmetricTree(strArr) take the array of strings stored in strArr, 
+// which will represent a binary tree, and determine if the tree is symmetric (a 
+// mirror image of itself). The array will be implemented similar to how a binary 
+// heap is implemented, except the tree may not be complete and NULL nodes on any 
+// level of the tree will be represented with a #. 
+
+// For example: if strArr is ["1", "2", "2", "3", "#", "#", "3"]
+// Tree:
+//				1
+//		2				2
+//	3		#		#		3
+
+// For the input above, your program should return the string true because the 
+// binary tree is symmetric.
+
+std::string TreeGraphs::SymmetricTree(std::string strArr[], int length)
+{
+	string					result;
+	bool					isSymmetric = false;
+	vector<string>			input(strArr, strArr + length);
+	Node *					root = nullptr;
+
+	root = createTreeNode(input[0]);
+
+	//populate tree
+	root = fillTree(input, root, 0, input.size());
+
+	// check for symmetry
+	isSymmetric = isTreeSymmetric(root, root);
+
+
+	result = (isSymmetric) ? "true" : "false";
+
+	return result;
+}
+
 std::vector<pair<int, int>> TreeGraphs::parseInput(std::vector<std::string> input)
 {
 	vector<pair<int, int>>	data;
@@ -119,16 +158,63 @@ void TreeGraphs::parseInputString(std::string str, int & num1, int & num2)
 	// extract 2nd number
 	temp = str.substr(pos + 1, str.length() - 2);
 	num2 = stoi(temp);
-} 
+}
 
-//std::string s = "scott>=tiger>=mushroom";
-//std::string delimiter = ">=";
-//
-//size_t pos = 0;
-//std::string token;
-//while ((pos = s.find(delimiter)) != std::string::npos) {
-//	token = s.substr(0, pos);
-//	std::cout << token << std::endl;
-//	s.erase(0, pos + delimiter.length());
-//}
-//std::cout << s << std::endl;
+Node* TreeGraphs::createTreeNode(string data)
+{
+	Node* node = new Node;
+
+	node->data = data;
+	node->left = nullptr;
+	node->right = nullptr;
+
+	return node;
+}
+
+
+
+Node * TreeGraphs::fillTree(vector<string> arr, Node * root, int index, int length)
+{
+	// Base case for recursion 
+	if (index  < length)
+	{
+		Node* temp = createTreeNode(arr[index]);
+		root = temp;
+
+		// insert left child 
+		root->left = fillTree(arr, root->left, 2 * index + 1, length);
+
+		// insert right child 
+		root->right = fillTree(arr,	root->right, 2 * index + 2, length);
+	}
+
+	return root;
+}
+
+
+bool TreeGraphs::isTreeSymmetric(Node * node1, Node * node2)
+{
+	bool isSymmetric = false;
+
+	// empty tree
+	if (node1 == nullptr && node2 == nullptr)
+	{
+		isSymmetric = true;
+	}
+
+	// For two trees to be mirror 
+	// images, the following
+	// three conditions must be true 
+	// 1 - Their root node's data must be same 
+	// 2 - left subtree of left tree and right subtree of right tree are equal
+	// 3 - right subtree of left tree and left subtree of right tree are equal
+	else if (node1 && node2 && node1->data == node2->data)
+	{
+		isSymmetric = isTreeSymmetric(node1->left,  node2->right) && 
+					  isTreeSymmetric(node1->right, node2->left);
+	}
+
+	return isSymmetric;
+}
+
+

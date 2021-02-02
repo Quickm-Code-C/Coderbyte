@@ -503,6 +503,26 @@ void test_treeConstructor()
 	
 }
 
+void	test_symmetricTree()
+{
+	TreeGraphs		tree;
+	string			strArr[] = { "1", "2", "2", "3", "#", "#", "3"};
+	int				length  = 7;
+
+	cout << "Symmetric Tree:" << endl;
+	test_printArray(strArr, length);
+	cout << "Result: " << tree.SymmetricTree(strArr, length) << endl;
+
+	string			strArr2[] = { "1", "2", "2", "3", "#", "#" };
+	length					  = 6;
+	test_printArray(strArr, length);
+	cout << "Result: " << tree.SymmetricTree(strArr, length) << endl;
+
+	cout << endl;
+
+
+}
+
 int main(void) {
 
 	test_usernameValidation();
@@ -566,6 +586,8 @@ int main(void) {
 	test_runLength();
 
 	test_treeConstructor();
+	
+	test_symmetricTree();
 
 	return 0;
 }
