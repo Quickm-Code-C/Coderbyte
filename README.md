@@ -27,6 +27,7 @@ The completed code challenges are:
  - String Periods
  - String Reduction (medium)
  - Time Convert
+ - Tree Constructor (medium)
  - Username Validation
  - Minimum Window Substring (medium)
  - Chessboard Traveling (hard)
