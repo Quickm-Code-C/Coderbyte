@@ -26,6 +26,7 @@ The completed code challenges are:
  - Simple Symbols
  - String Periods
  - String Reduction (medium)
+ - Symmetric Tree (medium)
  - Time Convert
  - Tree Constructor (medium)
  - Username Validation
