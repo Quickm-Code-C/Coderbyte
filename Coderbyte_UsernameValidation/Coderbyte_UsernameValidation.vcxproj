@@ -160,6 +160,7 @@
     <ClCompile Include="ConsecutiveNumbers.cpp" />
     <ClCompile Include="Exponent2.cpp" />
     <ClCompile Include="Factorial.cpp" />
+    <ClCompile Include="Fibonacci.cpp" />
     <ClCompile Include="MathSequence.cpp" />
     <ClCompile Include="Kaprekar.cpp" />
     <ClCompile Include="MathProduct.cpp" />
@@ -191,6 +192,7 @@
     <ClInclude Include="ConsecutiveNumbers.h" />
     <ClInclude Include="Exponent2.h" />
     <ClInclude Include="Factorial.h" />
+    <ClInclude Include="Fibonacci.h" />
     <ClInclude Include="MathSequence.h" />
     <ClInclude Include="Kaprekar.h" />
     <ClInclude Include="MathProduct.h" />

@@ -5,7 +5,7 @@
 using namespace std;
 
 // Challenge
-// function ProductDigits(num) has a num parameter, which is a aositive integer.  
+// function ProductDigits(num) has a num parameter, which is a positive integer.  
 // Determine the least amount of digits you need to multiply to produce the 
 // value .
 
@@ -18,7 +18,7 @@ using namespace std;
 // total of 3 digits in your multiplication.
 
 //Sample Test Cases
-//Input : 6
+//  Input : 6
 //	Output : 2
 //	Input : 23
 //	Output : 3

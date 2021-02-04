@@ -105,6 +105,9 @@
     <ClCompile Include="TreeGraphs.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Fibonacci.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="UsernameValidation.h">
@@ -192,6 +195,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="TreeGraphs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Fibonacci.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
