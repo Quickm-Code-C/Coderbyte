@@ -168,6 +168,7 @@
     <ClCompile Include="MinStringRange.cpp" />
     <ClCompile Include="NumberCheck.cpp" />
     <ClCompile Include="NumberEncoder.cpp" />
+    <ClCompile Include="PalindomeString.cpp" />
     <ClCompile Include="PrimeNumber.cpp" />
     <ClCompile Include="QuestionMarkSum.cpp" />
     <ClCompile Include="StringCompression.cpp" />
@@ -200,6 +201,7 @@
     <ClInclude Include="MinStringRange.h" />
     <ClInclude Include="NumberCheck.h" />
     <ClInclude Include="NumberEncoder.h" />
+    <ClInclude Include="PalindomeString.h" />
     <ClInclude Include="PrimeNumber.h" />
     <ClInclude Include="QuestionMarkSum.h" />
     <ClInclude Include="StringCompression.h" />

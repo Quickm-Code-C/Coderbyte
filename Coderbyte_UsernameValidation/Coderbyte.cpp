@@ -36,6 +36,7 @@
 #include "StringCompression.h"
 #include "TreeGraphs.h"
 #include "Fibonacci.h"
+#include "PalindomeString.h"
 
 using namespace std;
 
@@ -568,6 +569,26 @@ void test_fibonacciChecker()
 
 }
 
+void test_palindrome()
+{
+	string				str = "eye";
+	PalindomeString		palin;
+
+	cout << "Palindrome: " << endl;
+	cout << "Input: " << str << "  Result: " << palin.Palindrome(str) << endl;
+
+	str = " eye";
+	cout << "Input: " << str << "  Result: " << palin.Palindrome(str) << endl;
+
+	str = "faafl";
+	cout << "Input: " << str << "  Result: " << palin.Palindrome(str) << endl;
+
+	str = "a b c c b a";
+	cout << "Input: " << str << "  Result: " << palin.Palindrome(str) << endl;
+
+	cout << endl;
+}
+
 int main(void) {
 
 	test_usernameValidation();
@@ -637,6 +658,8 @@ int main(void) {
 	test_preorderTraversal();
 
 	test_fibonacciChecker();
+
+	test_palindrome();
 
 	return 0;
 }
