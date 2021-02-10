@@ -16,6 +16,7 @@ The completed code challenges are:
  - Moving Median
  - Number Encoding (medium)
  - Other Products
+ - Palindrome
  - Power of 2
  - Prime Mover (medium)
  - Product Digits
