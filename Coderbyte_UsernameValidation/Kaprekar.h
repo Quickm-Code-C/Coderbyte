@@ -7,5 +7,8 @@ public:
 protected:
 	int ascendInt(int num);
 	int descendInt(int num);
+
+private:
+	int  adjustInt(int num, bool descend);
 };
 

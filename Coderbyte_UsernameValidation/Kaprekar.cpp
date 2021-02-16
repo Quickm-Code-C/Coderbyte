@@ -12,17 +12,20 @@ using namespace std;
 // the previous step. Performing this routine will always cause you to reach a 
 // fixed number: 6174. Then performing the routine on 6174 will always give you 
 // 6174 (7641 - 1467 = 6174). Your program should return the number of times 
-// this routine must be performed until 6174 is reached. For example: if num is 
-// 3524 your program should return 3 because of the following steps: (1) 5432 - 
-// 2345 = 3087, (2) 8730 - 0378 = 8352, (3) 8532 - 2358 = 6174.
+// this routine must be performed until 6174 is reached. 
+
+// For example: if num is 3524 your program should return 3 because of the 
+// following steps: (1) 5432 - 2345 = 3087, (2) 8730 - 0378 = 8352, 
+// (3) 8532 - 2358 = 6174.
 
 int Kaprekar::KaprekarsConstant(int num)
 {
-	int r = num;
-	int count = 0;
+	int remainder	= num;
+	int count		= 0;
 
-	while (r != 6174) {
-		r = descendInt(r) - ascendInt(r);
+	while (remainder != 6174)
+	{
+		remainder = descendInt(remainder) - ascendInt(remainder);
 		count++;
 	}
 
@@ -31,22 +34,25 @@ int Kaprekar::KaprekarsConstant(int num)
 
 int Kaprekar::ascendInt(int num)
 {
-	int arr[4];
-	int temp = num;
+	int result = 0;
 
-	arr[0] = temp / 1000;  temp -= arr[0] * 1000;
-	arr[1] = temp / 100;   temp -= arr[1] * 100;
-	arr[2] = temp / 10;    temp -= arr[2] * 10;
-	arr[3] = temp;
+	result = adjustInt(num, false);
 
-	std::vector<int> ints(arr, arr + 4);
-	sort(ints.begin(), ints.end());
-
-	return ints[0] * 1000 + ints[1] * 100 + ints[2] * 10 + ints[3];
+	return result;
 }
 
 int Kaprekar::descendInt(int num)
 {
+	int result = 0;
+
+	result = adjustInt(num, true);
+
+	return result;
+}
+
+int Kaprekar::adjustInt(int num, bool descend)
+{
+	int result = 0;
 	int arr[4];
 	int temp = num;
 
@@ -56,7 +62,11 @@ int Kaprekar::descendInt(int num)
 	arr[3] = temp;
 
 	std::vector<int> ints(arr, arr + 4);
-	sort(ints.begin(), ints.end(), std::greater<int>());
 
-	return ints[0] * 1000 + ints[1] * 100 + ints[2] * 10 + ints[3];
+	(descend) ? sort(ints.begin(), ints.end(), std::greater<int>())
+		      : sort(ints.begin(), ints.end(), std::less<int>());
+
+	result = ints[0] * 1000 + ints[1] * 100 + ints[2] * 10 + ints[3];
+
+	return result;
 }
