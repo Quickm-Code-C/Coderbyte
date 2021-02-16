@@ -531,7 +531,7 @@ void	test_preorderTraversal()
 	string			strArr[] = { "1", "2", "2", "3", "#", "#", "3" };
 	int				length = 7;
 
-	cout << "Symmetric Tree:" << endl;
+	cout << "Preorder Tree Traversal:" << endl;
 	test_printArray(strArr, length);
 	cout << "Result: " << tree.PreorderTraversal(strArr, length) << endl;
 
