@@ -72,7 +72,7 @@ void test_printArray(string *arr, int length)
 	}
 
 	str.pop_back();
-    std::cout << str << "] " << std::endl;
+    std::cout << str << "] ";
 }
 
 void test_usernameValidation()
@@ -610,75 +610,75 @@ void test_vowelSquares()
 
 int main(void) {
 
-	//test_usernameValidation();
+	test_usernameValidation();
 
-	//test_determinant();
+	test_determinant();
 
-	//test_longestWord();
+	test_longestWord();
 
-	//test_checkNums();
+	test_checkNums();
 
-	//test_timeConverter();
+	test_timeConverter();
 	
-	//test_alphabetSoup();
+	test_alphabetSoup();
 
-	//test_firstReverse();
+	test_firstReverse();
 
-	//test_simpleAdding();
+	test_simpleAdding();
 
-	//test_letterChanges();
+	test_letterChanges();
 
-	//test_simpleSymbols();
+	test_simpleSymbols();
 
-	//test_firstFactorial();
+	test_firstFactorial();
 
-	//test_letterCapitalize();
+	test_letterCapitalize();
 
-	//test_kaprekarConstant();
+	test_kaprekarConstant();
 
-	//test_chessboardTraveling();
+	test_chessboardTraveling();
 
-	//test_findIntersection();
+	test_findIntersection();
 
-	//test_minWindowSubstring();
+	test_minWindowSubstring();
 
-	//test_QuestionMarks();
+	test_QuestionMarks();
 
-	//test_powerOfTwo();
+	test_powerOfTwo();
 
-	//test_productDigits();
+	test_productDigits();
 
-	//test_otherProducts();
+	test_otherProducts();
 
-	//test_movingMedian();
+	test_movingMedian();
 
-	//test_mathSequence();
+	test_mathSequence();
 
-	//test_removeBrackets();
+	test_removeBrackets();
 
-	//test_stringPeriods();
+	test_stringPeriods();
 
-	//test_numberCoding();
+	test_numberCoding();
 
-	//test_stringReducer();
+	test_stringReducer();
 
-	//test_primeMover();
+	test_primeMover();
 
-	//test_consecutive();
+	test_consecutive();
 
-	//test_kUniqueChars();
+	test_kUniqueChars();
 
-	//test_runLength();
+	test_runLength();
 
-	//test_treeConstructor();
-	//
-	//test_symmetricTree();
+	test_treeConstructor();
+	
+	test_symmetricTree();
 
-	//test_preorderTraversal();
+	test_preorderTraversal();
 
-	//test_fibonacciChecker();
+	test_fibonacciChecker();
 
-	//test_palindrome();
+	test_palindrome();
 
     test_vowelSquares();
 
