@@ -111,6 +111,9 @@
     <ClCompile Include="PalindomeString.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SquareVowels.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="UsernameValidation.h">
@@ -204,6 +207,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="PalindomeString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SquareVowels.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

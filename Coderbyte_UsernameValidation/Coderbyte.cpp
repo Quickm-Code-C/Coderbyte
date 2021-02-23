@@ -37,6 +37,7 @@
 #include "TreeGraphs.h"
 #include "Fibonacci.h"
 #include "PalindomeString.h"
+#include "SquareVowels.h"
 
 using namespace std;
 
@@ -71,7 +72,7 @@ void test_printArray(string *arr, int length)
 	}
 
 	str.pop_back();
-	std::cout << str << "] ";
+    std::cout << str << "] " << std::endl;
 }
 
 void test_usernameValidation()
@@ -589,77 +590,97 @@ void test_palindrome()
 	cout << endl;
 }
 
+void test_vowelSquares()
+{
+    string		    strArr[] = { "abcd", "eikr", "oufj" };
+    int             length = 3;
+    SquareVowels    square;
+
+    cout << "Vowel Squares:" << endl;
+    test_printArray(strArr, length);
+    cout << "Result: " << square.VowelSquare(strArr, length) << endl;
+    cout << endl;
+
+    string		    strArr2[] = { "lbzk", "ncdf", "mxio", "pqau" };
+    length                    = 4;
+    test_printArray(strArr2, length);
+    cout << "Result: " << square.VowelSquare(strArr2, length) << endl;
+    cout << endl;
+}
+
 int main(void) {
 
-	test_usernameValidation();
+	//test_usernameValidation();
 
-	test_determinant();
+	//test_determinant();
 
-	test_longestWord();
+	//test_longestWord();
 
-	test_checkNums();
+	//test_checkNums();
 
-	test_timeConverter();
-	 
-	test_alphabetSoup();
-
-	test_firstReverse();
-
-	test_simpleAdding();
-
-	test_letterChanges();
-
-	test_simpleSymbols();
-
-	test_firstFactorial();
-
-	test_letterCapitalize();
-
-	test_kaprekarConstant();
-
-	test_chessboardTraveling();
-
-	test_findIntersection();
-
-	test_minWindowSubstring();
-
-	test_QuestionMarks();
-
-	test_powerOfTwo();
-
-	test_productDigits();
-
-	test_otherProducts();
-
-	test_movingMedian();
-
-	test_mathSequence();
-
-	test_removeBrackets();
-
-	test_stringPeriods();
-
-	test_numberCoding();
-
-	test_stringReducer();
-
-	test_primeMover();
-
-	test_consecutive();
-
-	test_kUniqueChars();
-
-	test_runLength();
-
-	test_treeConstructor();
+	//test_timeConverter();
 	
-	test_symmetricTree();
+	//test_alphabetSoup();
 
-	test_preorderTraversal();
+	//test_firstReverse();
 
-	test_fibonacciChecker();
+	//test_simpleAdding();
 
-	test_palindrome();
+	//test_letterChanges();
+
+	//test_simpleSymbols();
+
+	//test_firstFactorial();
+
+	//test_letterCapitalize();
+
+	//test_kaprekarConstant();
+
+	//test_chessboardTraveling();
+
+	//test_findIntersection();
+
+	//test_minWindowSubstring();
+
+	//test_QuestionMarks();
+
+	//test_powerOfTwo();
+
+	//test_productDigits();
+
+	//test_otherProducts();
+
+	//test_movingMedian();
+
+	//test_mathSequence();
+
+	//test_removeBrackets();
+
+	//test_stringPeriods();
+
+	//test_numberCoding();
+
+	//test_stringReducer();
+
+	//test_primeMover();
+
+	//test_consecutive();
+
+	//test_kUniqueChars();
+
+	//test_runLength();
+
+	//test_treeConstructor();
+	//
+	//test_symmetricTree();
+
+	//test_preorderTraversal();
+
+	//test_fibonacciChecker();
+
+	//test_palindrome();
+
+    test_vowelSquares();
 
 	return 0;
 }

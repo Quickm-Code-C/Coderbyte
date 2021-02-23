@@ -171,6 +171,7 @@
     <ClCompile Include="PalindomeString.cpp" />
     <ClCompile Include="PrimeNumber.cpp" />
     <ClCompile Include="QuestionMarkSum.cpp" />
+    <ClCompile Include="SquareVowels.cpp" />
     <ClCompile Include="StringCompression.cpp" />
     <ClCompile Include="StringIntersection.cpp" />
     <ClCompile Include="Reverse.cpp" />
@@ -204,6 +205,7 @@
     <ClInclude Include="PalindomeString.h" />
     <ClInclude Include="PrimeNumber.h" />
     <ClInclude Include="QuestionMarkSum.h" />
+    <ClInclude Include="SquareVowels.h" />
     <ClInclude Include="StringCompression.h" />
     <ClInclude Include="StringIntersection.h" />
     <ClInclude Include="Reverse.h" />
