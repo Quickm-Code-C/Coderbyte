@@ -5,14 +5,18 @@ The completed code challenges are:
  - Alphabet Soup
  - ArithGeo
  - Check Numbers
+ - Chessboard Traveling (hard)
  - Consecutive (medium)
  - Find Intersection
  - First Factorial
  - First Reverse
  - K Unique Chars (medium)
+ - Kaprekar's Constant (hard)
  - Letter Capitalize
  - Letter Changes
  - Longest Word
+ - Matrix Determinant (hard)
+ - Minimum Window Substring (medium)
  - Moving Median
  - Number Encoding (medium)
  - Other Products
@@ -31,7 +35,4 @@ The completed code challenges are:
  - Time Convert
  - Tree Constructor (medium)
  - Username Validation
- - Minimum Window Substring (medium)
- - Chessboard Traveling (hard)
- - Kaprekar's Constant (hard)
- - Matrix Determinant (hard)
+ - Vowel Square
