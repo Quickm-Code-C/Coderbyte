@@ -13,25 +13,28 @@ using namespace std;
 std::string Symbols::SimpleSymbols(std::string str)
 {
 	string result = "false";
-	for (unsigned int index = 0; index < str.length(); ++index) 
+    bool   found  = false;
+    int    length = str.length();
+
+	for (int index = 0; index < length &&  !found; ++index)
 	{
 		if (isalpha(str[index])) 
 		{
-			if ((index == 0) || (index == str.length() - 1))
+			if ((index == 0) && (index == length - 1))
 			{ 
-				result = "false"; 
 				break;
 			}
-			else if (str[index - 1] == '+' && str[index + 1] == '+') 
+			else if (index != 0  &&
+                     index != length-1 &&
+                     str[index - 1] == '+' && 
+                     str[index + 1] == '+') 
 			{
-				result = "true";
-			}
-			else 
-			{ 
-				result = "false";
-				break;
+                found = true;
 			}
 		}
+
+        result = found ? "true" : "false";
+
 	}
 	return result;
 }

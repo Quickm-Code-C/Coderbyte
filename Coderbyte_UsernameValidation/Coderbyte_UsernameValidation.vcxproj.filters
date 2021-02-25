@@ -33,9 +33,6 @@
     <ClCompile Include="TimeConverter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Alphabet.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Reverse.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -112,6 +109,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SquareVowels.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Alphabet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
