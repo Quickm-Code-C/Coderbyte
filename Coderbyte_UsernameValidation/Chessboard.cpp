@@ -21,14 +21,10 @@ int Chessboard::ChessboardTraveling(std::string str)
 {
     int     result  = 0;
 	int		x, y, a, b;
-	char *	token	= nullptr;
-	char *	data	= const_cast<char *>(str.c_str());
-	char *  next    = nullptr;
 
-	token = strtok_s(data, "( )", &next);	x = *token - '0';
-	token = strtok_s(NULL, "( )", &next);	y = *token - '0';
-	token = strtok_s(NULL, "( )", &next);	a = *token - '0';
-	token = strtok_s(NULL, "( )", &next);	b = *token - '0';
+    // Str having the format of "(x y)(a b)"
+    // parentheses are ignored
+    sscanf_s(str.c_str(), "%*c %d %d %*c %*c %d %d %*c", &x, &y, &a, &b);
 
 	int row = a - x;
 	int col = b - y;
