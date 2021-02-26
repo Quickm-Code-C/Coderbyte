@@ -36,12 +36,23 @@ int Chessboard::ChessboardTraveling(std::string str)
 
 int Chessboard::Ckn(const int k, const int n)
 {
-	int c = 1;
-	for (int i = n, j = 0; j < k; i--, j++)
-	{
-		c *= i;
-	}
-	return c / factorial(k);
+    int result = 0;
+
+    auto nFact = factorial(n);
+    auto kFact = factorial(k);
+    auto nkFact = factorial(n - k);
+
+	//int c = 1;
+	//for (int i = n, j = 0; j < k; i--, j++)
+	//{
+	//	c *= i;
+	//}
+
+    result = nFact / (kFact * nkFact);
+
+	//result =  c / factorial(k);
+
+    return result;
 }
 
 int Chessboard::factorial(int num)

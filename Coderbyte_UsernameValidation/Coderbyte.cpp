@@ -209,12 +209,16 @@ void test_kaprekarConstant()
 
 void test_chessboardTraveling()
 {
-	string			input = "(1 1)(2 2)";
 	Chessboard		traveler;
+    cout << "Chessboard Traveling: " << endl;
 
-	cout << "Chessboard Traveling: ";
-	cout << "Input string: " << input << " Converted string: " << traveler.ChessboardTraveling(input) << endl;
-	cout << endl;
+    string			input = "(1 1)(2 2)";
+    cout << "Input string: " << input << " Output: " << traveler.ChessboardTraveling(input) << endl;
+    cout << endl;
+
+    input = "(1 1)(5 4)";
+    cout << "Input string: " << input << " Output: " << traveler.ChessboardTraveling(input) << endl;
+    cout << endl;
 }
 
 void test_findIntersection()
