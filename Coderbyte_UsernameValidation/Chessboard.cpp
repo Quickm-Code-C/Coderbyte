@@ -1,5 +1,6 @@
 #include "Chessboard.h"
 #include <cstring>
+#include "Factorial.h"
 
 using namespace std;
 
@@ -18,6 +19,7 @@ using namespace std;
 
 int Chessboard::ChessboardTraveling(std::string str)
 {
+    int     result  = 0;
 	int		x, y, a, b;
 	char *	token	= nullptr;
 	char *	data	= const_cast<char *>(str.c_str());
@@ -31,35 +33,22 @@ int Chessboard::ChessboardTraveling(std::string str)
 	int row = a - x;
 	int col = b - y;
 
-	return Ckn(row, row + col);
-}
-
-int Chessboard::Ckn(const int k, const int n)
-{
-    int result = 0;
-
-    auto nFact = factorial(n);
-    auto kFact = factorial(k);
-    auto nkFact = factorial(n - k);
-
-	//int c = 1;
-	//for (int i = n, j = 0; j < k; i--, j++)
-	//{
-	//	c *= i;
-	//}
-
-    result = nFact / (kFact * nkFact);
-
-	//result =  c / factorial(k);
+	result = ComputeUniqueWays(row, row + col);
 
     return result;
 }
 
-int Chessboard::factorial(int num)
+int Chessboard::ComputeUniqueWays(const int k, const int n)
 {
-	int result = 1;
+    int result = 0;
+    Factorial  f;
 
-	result = (num <= 1) ? 1 : num * factorial(num - 1);
+    auto nFact  = f.FirstFactorial(n);
+    auto kFact  = f.FirstFactorial(k);
+    auto nkFact = f.FirstFactorial(n - k);
 
-	return result;
+    result = nFact / (kFact * nkFact);
+
+    return result;
 }
+
