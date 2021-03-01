@@ -545,11 +545,6 @@ void	test_preorderTraversal()
 	test_printArray(strArr2, length);
 	cout << "Result: " << tree.PreorderTraversal(strArr2, length) << endl; // 5 2 1 9 6 8 4
 
-	string			strArr3[] = { "5", "2", "6", "1", "9", "#", "8", "#", "#", "#", "#", "4", "#" }; //5 2 1 9 6 8 4
-	length                    = 13;
-	test_printArray(strArr3, length);
-	cout << "Result: " << tree.PreorderTraversal(strArr3, length) << endl; // 5 2 9 12 15 6 8 1 45
-
 	cout << endl;
 }
 
