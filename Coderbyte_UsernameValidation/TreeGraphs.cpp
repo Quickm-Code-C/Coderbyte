@@ -188,11 +188,16 @@ void TreeGraphs::parseInputString(std::string str, int & num1, int & num2)
 
 Node* TreeGraphs::createTreeNode(string data)
 {
-	Node* node = new Node;
+	Node* node = nullptr;
 
-	node->data = data;
-	node->left = nullptr;
-	node->right = nullptr;
+    if (data.compare("#") != 0)
+    {
+        node = new Node();
+
+        node->data = data;
+        node->left = nullptr;
+        node->right = nullptr;
+    }
 
 	return node;
 }
@@ -207,11 +212,21 @@ Node * TreeGraphs::fillTree(vector<string> arr, Node * root, int index, int leng
 		Node* temp = createTreeNode(arr[index]);
 		root = temp;
 
-		// insert left child 
-		root->left = fillTree(arr, root->left, 2 * index + 1, length);
+        if (temp != nullptr)
+        {
+            int childIndex = 2 * index + 1;
 
-		// insert right child 
-		root->right = fillTree(arr,	root->right, 2 * index + 2, length);
+            if (childIndex == length)
+            {
+                childIndex -= 2;
+            }
+            // insert left child 
+            root->left = fillTree(arr, root->left, childIndex, length);
+
+            // insert right child 
+            root->right = fillTree(arr, root->right, childIndex + 1, length);
+        }
+
 	}
 
 	return root;
