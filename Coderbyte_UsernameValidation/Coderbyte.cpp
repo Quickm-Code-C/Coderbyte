@@ -171,7 +171,7 @@ void test_simpleSymbols()
 	string			input = "++d+===+c++==a";
 	Symbols			symbol;
 
-	cout << "Letter Changes: ";
+	cout << "Simple Symbols: ";
 	cout << "Input string: " << input << " Converted string: " << symbol.SimpleSymbols(input) << endl;
 	cout << endl;
 }

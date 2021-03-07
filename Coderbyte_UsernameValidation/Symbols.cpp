@@ -16,25 +16,26 @@ std::string Symbols::SimpleSymbols(std::string str)
     bool   found  = false;
     int    length = str.length();
 
-	for (int index = 0; index < length &&  !found; ++index)
+	for (int index = 0; index < length  ; ++index)
 	{
 		if (isalpha(str[index])) 
 		{
-			if ((index == 0) && (index == length - 1))
-			{ 
-				break;
-			}
-			else if (index != 0  &&
-                     index != length-1 &&
-                     str[index - 1] == '+' && 
-                     str[index + 1] == '+') 
-			{
+            if (index != 0 &&
+                index != length - 1 &&
+                str[index - 1] == '+' &&
+                str[index + 1] == '+')
+            {
                 found = true;
-			}
-		}
+            }
 
-        result = found ? "true" : "false";
-
+            else
+            {
+                found = false;
+            }
+        }
 	}
+
+    result = found ? "true" : "false";
+
 	return result;
 }
