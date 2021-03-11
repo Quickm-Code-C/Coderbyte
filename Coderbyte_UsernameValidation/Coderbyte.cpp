@@ -55,7 +55,7 @@ void test_printArray(int* arr, int length)
 	}
 
 	str.pop_back();
-	std::cout << str << "]";
+	std::cout << str << "]  ";
 }
 
 void test_printArray(string *arr, int length)
@@ -72,7 +72,7 @@ void test_printArray(string *arr, int length)
 	}
 
 	str.pop_back();
-    std::cout << str << "] ";
+    std::cout << str << "]   ";
 }
 
 void test_usernameValidation()
@@ -607,6 +607,48 @@ void test_vowelSquares()
     cout << endl;
 }
 
+void test_biggerSideofTree()
+{
+    TreeGraphs  tree;
+    cout << "Bigger side of tree:" << endl;
+
+    int         nums[] = {3,6,2,9,-1,10};
+    int         length = 6;
+    vector<int> arr(nums, nums + length);
+
+    test_printArray(nums, length);
+    cout << "Result: " << tree.GetBiggerSubtree(arr) << endl;
+    cout << endl;
+
+
+    int         nums2[] = {1,10,5,1,0,6};
+                length = 6;
+    vector<int> arr2(nums2, nums2 + length);
+
+    test_printArray(nums2, length);
+    cout << "Result: " << tree.GetBiggerSubtree(arr2) << endl;
+    cout << endl;
+
+    int         nums3[] = {1,10,5,1,0,6,7};
+    length = 7;
+    vector<int> arr3(nums3, nums3 + length);
+
+    test_printArray(nums3, length);
+    cout << "Result: " << tree.GetBiggerSubtree(arr3) << endl;
+    cout << endl;
+
+    //int         nums4[] = {};
+    length = 7;
+    vector<int>   arr4;
+
+    //test_printArray(nums3, length);
+    cout << "Array: " << "[]  ";
+    cout << "Result: " << tree.GetBiggerSubtree(arr4) << endl;
+    cout << endl;
+
+
+}
+
 int main(void) {
 
 	test_usernameValidation();
@@ -680,6 +722,8 @@ int main(void) {
 	test_palindrome();
 
     test_vowelSquares();
+
+    test_biggerSideofTree();
 
 	return 0;
 }

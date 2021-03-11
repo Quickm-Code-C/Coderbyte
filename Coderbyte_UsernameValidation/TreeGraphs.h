@@ -20,6 +20,8 @@ public:
 			std::string SymmetricTree(std::string strArr[], int length);
 			std::string	PreorderTraversal(std::string strArr[], int length);
 
+            std::string GetBiggerSubtree(std::vector<int> arr);
+
 
 protected:
 	std::vector<std::pair<int, int>>	parseInput(std::vector<std::string> input);
@@ -32,6 +34,8 @@ protected:
 
 	// Preorder Traversal code challenge
 	std::string							createPreorderOutput(Node * root);
+
+    int                                 GetTreeSum(std::vector<int> arr, unsigned int index);
 
 
 };

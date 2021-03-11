@@ -144,6 +144,27 @@ std::string TreeGraphs::PreorderTraversal(std::string strArr[], int length)
 	return result;
 }
 
+string TreeGraphs::GetBiggerSubtree(vector<int> arr)
+{
+    string  result      = "empty";
+    int     leftSum     = 0;
+    int     rightSum    = 0;
+
+    if (arr.size() != 0)
+    {
+        int left = 1;
+        int right = 2;
+
+        leftSum = GetTreeSum(arr, left);
+        rightSum = GetTreeSum(arr, right);
+
+        if (leftSum > rightSum)         result = "Left";
+        else if (leftSum < rightSum)    result = "Right";
+    }
+
+    return result;
+}
+
 
 std::vector<pair<int, int>> TreeGraphs::parseInput(std::vector<std::string> input)
 {
@@ -282,3 +303,19 @@ std::string TreeGraphs::createPreorderOutput(Node * node)
 
 	return result;
 }
+
+int TreeGraphs::GetTreeSum(vector<int> arr, unsigned int index)
+{
+    int sum = 0;
+
+    if (index > arr.size() - 1 || arr[index] == -1) return 0;
+    int leftChild = 2 * index + 1;
+    int rightChild = 2 * index + 2;
+
+
+    if (index < arr.size()) {
+        sum = arr[index] + GetTreeSum(arr, leftChild) + GetTreeSum(arr, rightChild);
+    }
+    return sum;
+}
+
