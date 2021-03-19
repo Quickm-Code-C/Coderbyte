@@ -184,7 +184,7 @@ void test_firstFactorial()
 	int			value = 3;
     cout << "Value: " << value << " Factorial: " << calculator.FirstFactorial(value) << endl;
 
-    value = 5;
+    value = 0;
     cout << "Value: " << value << " Factorial: " << calculator.FirstFactorial(value) << endl;
     cout << endl;
 }
