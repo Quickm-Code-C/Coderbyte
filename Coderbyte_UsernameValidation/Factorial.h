@@ -3,6 +3,6 @@
 class Factorial
 {
 public:
-	int FirstFactorial(int num);
+    long long FirstFactorial(int num);
 };
 

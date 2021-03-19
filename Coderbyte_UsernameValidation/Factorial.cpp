@@ -5,9 +5,9 @@
 // return (4 * 3 * 2 * 1) = 24. For the test cases, the range will be between 1 
 // and 18 and the input will always be an integer.
 
-int Factorial::FirstFactorial(int num)
+long long Factorial::FirstFactorial(int num)
 {
-    int result = 0;
+    long long result = 0UL;
 
     if (num == 0)
     {
@@ -16,9 +16,9 @@ int Factorial::FirstFactorial(int num)
 
     else
     {
-        result = num * FirstFactorial(num - 1);
+        auto value = FirstFactorial(num - 1);
+        result = (long long)num * value;
     }
 
-
-	return result;
+    return result;
 }
