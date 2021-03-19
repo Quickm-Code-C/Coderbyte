@@ -178,12 +178,15 @@ void test_simpleSymbols()
 
 void test_firstFactorial()
 {
-	int			value = 3;
-	Factorial	calculator;
+    cout << "First Factorial: " << endl;
+    Factorial	calculator;
 
-	cout << "First Factorial: ";
-	cout << "Value: " << value << " Factorial: " << calculator.FirstFactorial(value) << endl;
-	cout << endl;
+	int			value = 3;
+    cout << "Value: " << value << " Factorial: " << calculator.FirstFactorial(value) << endl;
+
+    value = 5;
+    cout << "Value: " << value << " Factorial: " << calculator.FirstFactorial(value) << endl;
+    cout << endl;
 }
 
 void test_letterCapitalize()
@@ -520,10 +523,10 @@ void	test_symmetricTree()
 	test_printArray(strArr, length);
 	cout << "Result: " << tree.SymmetricTree(strArr, length) << endl;
 
-	string			strArr2[] = { "1", "2", "2", "3", "#", "#" };
-	length					  = 6;
-	test_printArray(strArr, length);
-	cout << "Result: " << tree.SymmetricTree(strArr, length) << endl;
+	//string			strArr2[] = { "1", "2", "2", "3", "#", "#" };
+	//length					  = 6;
+	//test_printArray(strArr, length);
+	//cout << "Result: " << tree.SymmetricTree(strArr, length) << endl;
 
 	cout << endl;
 

@@ -7,12 +7,18 @@
 
 int Factorial::FirstFactorial(int num)
 {
-	int factorial = num;
+    int result = 0;
 
-	for (int index = num - 1; index > 1; index--)
-	{
-		factorial *= index;
-	}
+    if (num == 0)
+    {
+        result = 1;
+    }
 
-	return factorial;
+    else
+    {
+        result = num * FirstFactorial(num - 1);
+    }
+
+
+	return result;
 }
