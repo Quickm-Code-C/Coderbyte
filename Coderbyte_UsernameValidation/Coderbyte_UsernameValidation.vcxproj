@@ -153,6 +153,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Alphabet.cpp" />
+    <ClCompile Include="ArrayAdditionSum.cpp" />
     <ClCompile Include="Brackets.cpp" />
     <ClCompile Include="ChangeLetter.cpp" />
     <ClCompile Include="Chessboard.cpp" />
@@ -189,6 +190,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Alphabet.h" />
+    <ClInclude Include="ArrayAdditionSum.h" />
     <ClInclude Include="Brackets.h" />
     <ClInclude Include="ChangeLetter.h" />
     <ClInclude Include="Chessboard.h" />

@@ -39,6 +39,7 @@
 #include "PalindomeString.h"
 #include "SquareVowels.h"
 #include "MathZeroSum.h"
+#include "ArrayAdditionSum.h"
 
 using namespace std;
 
@@ -644,7 +645,6 @@ void test_biggerSideofTree()
     cout << "Result: " << tree.GetBiggerSubtree(arr3) << endl;
     cout << endl;
 
-    //int         nums4[] = {};
     length = 7;
     vector<int>   arr4;
 
@@ -666,6 +666,19 @@ void test_mathPlusMinus()
 
     num = 35132;
     cout << "Input: " << num << "  Result: " << zero.PlusMinus(num) << endl;
+    cout << endl;
+}
+
+void test_ArrayAddition()
+{
+    ArrayAdditionSum  sumFinder;;
+    cout << "Array Addition:" << endl;
+
+    int         nums[] = {4, 6, 23, 10, 1, 3};
+    int         length = 6;
+
+    test_printArray(nums, length);
+    cout << "Result: " << sumFinder.ArrayAddition(nums, length) << endl;
     cout << endl;
 }
 
@@ -746,6 +759,8 @@ int main(void) {
     test_biggerSideofTree();
 
     test_mathPlusMinus();
+
+    test_ArrayAddition();
 
 	return 0;
 }

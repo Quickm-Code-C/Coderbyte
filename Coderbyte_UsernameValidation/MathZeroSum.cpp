@@ -31,7 +31,8 @@ std::string MathZeroSum::PlusMinus(int num)
     return result;
 }
 
-void MathZeroSum::CheckSum(const vector<int>& data, int pos, int sum, string currentOp, string& result)
+void MathZeroSum::CheckSum(const vector<int>& data, int pos, int sum, 
+                           string currentOp,  string& result)
 {
     if (result.empty())
     {
