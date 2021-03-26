@@ -38,6 +38,7 @@
 #include "Fibonacci.h"
 #include "PalindomeString.h"
 #include "SquareVowels.h"
+#include "MathZeroSum.h"
 
 using namespace std;
 
@@ -651,8 +652,21 @@ void test_biggerSideofTree()
     cout << "Array: " << "[]  ";
     cout << "Result: " << tree.GetBiggerSubtree(arr4) << endl;
     cout << endl;
+}
 
+void test_mathPlusMinus()
+{
+    MathZeroSum     zero;
+    int             num;
 
+    cout << "Plus Minus: " << endl;
+
+    num = 213;
+    cout << "Input: " << num << "  Result: " << zero.PlusMinus(num) << endl;
+
+    num = 35132;
+    cout << "Input: " << num << "  Result: " << zero.PlusMinus(num) << endl;
+    cout << endl;
 }
 
 int main(void) {
@@ -730,6 +744,8 @@ int main(void) {
     test_vowelSquares();
 
     test_biggerSideofTree();
+
+    test_mathPlusMinus();
 
 	return 0;
 }

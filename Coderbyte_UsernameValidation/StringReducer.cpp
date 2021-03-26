@@ -44,9 +44,9 @@ int StringReducer::StringReduction(std::string str)
 		while (!done)
 		{
 			string temp;
-
+            int    length = localStr.length();
 			cout << "Reduction: " << localStr;
-			for (int index = 0; index < localStr.length() - 1 && !done; index++)
+			for (int index = 0; index < length - 1 && !done; index++)
 			{
 				temp = convertChar(localStr[index], localStr[index + 1]);
 

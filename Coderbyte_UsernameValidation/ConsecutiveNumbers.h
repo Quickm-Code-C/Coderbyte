@@ -2,6 +2,6 @@
 class ConsecutiveNumbers
 {
 public:
-	int Consecutive(int arr[], unsigned int length);
+	int Consecutive(int arr[],  int length);
 };
 

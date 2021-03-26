@@ -2,6 +2,7 @@
 #include <vector>
 #include <map>
 #include <sstream>
+#include <iostream>
 
 using namespace std;
 
@@ -257,11 +258,21 @@ Node * TreeGraphs::fillTree(vector<string> arr, Node * root, int index, int leng
 bool TreeGraphs::isTreeSymmetric(Node * node1, Node * node2)
 {
 	bool isSymmetric = false;
+    string temp;
+    cout << endl;
+    cout << "Node1: ";
+    temp = (node1 != nullptr) ? node1->data : "null";
+    cout << temp;
+    cout << " Node2: ";
+    temp = (node2 != nullptr) ? node2->data : "null";
+    cout << temp;
+    cout << endl;
 
 	// empty tree
 	if (node1 == nullptr && node2 == nullptr)
 	{
 		isSymmetric = true;
+        return true;
 	}
 
 	// For two trees to be mirror 
@@ -270,13 +281,14 @@ bool TreeGraphs::isTreeSymmetric(Node * node1, Node * node2)
 	// 1 - Their root node's data must be same 
 	// 2 - left subtree of left tree and right subtree of right tree are equal
 	// 3 - right subtree of left tree and left subtree of right tree are equal
+    
 	else if (node1 && node2 && node1->data == node2->data)
 	{
-		isSymmetric = isTreeSymmetric(node1->left,  node2->right) && 
+		return isTreeSymmetric(node1->left,  node2->right) && 
 					  isTreeSymmetric(node1->right, node2->left);
 	}
 
-	return isSymmetric;
+	return false;
 }
 
 std::string TreeGraphs::createPreorderOutput(Node * node)
