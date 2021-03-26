@@ -12,6 +12,7 @@ The completed code challenges are:
  - First Reverse
  - K Unique Chars (medium)
  - Kaprekar's Constant (hard)
+ - HIstogram Area (medium)
  - Letter Capitalize
  - Letter Changes
  - Longest Word
