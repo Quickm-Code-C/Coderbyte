@@ -120,6 +120,9 @@
     <ClCompile Include="ArrayAdditionSum.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MathHistogramArea.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="UsernameValidation.h">
@@ -222,6 +225,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ArrayAdditionSum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MathHistogramArea.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

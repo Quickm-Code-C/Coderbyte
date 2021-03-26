@@ -40,6 +40,7 @@
 #include "SquareVowels.h"
 #include "MathZeroSum.h"
 #include "ArrayAdditionSum.h"
+#include "MathHistogramArea.h"
 
 using namespace std;
 
@@ -671,7 +672,7 @@ void test_mathPlusMinus()
 
 void test_ArrayAddition()
 {
-    ArrayAdditionSum  sumFinder;;
+    ArrayAdditionSum  sumFinder;
     cout << "Array Addition:" << endl;
 
     int         nums[] = {4, 6, 23, 10, 1, 3};
@@ -680,6 +681,20 @@ void test_ArrayAddition()
     test_printArray(nums, length);
     cout << "Result: " << sumFinder.ArrayAddition(nums, length) << endl;
     cout << endl;
+}
+
+void  test_HistogramArea()
+{
+    MathHistogramArea  area;
+    cout << "Histogram Area:" << endl;
+
+    int         nums[] = {6, 2, 5, 4, 5, 1, 6};
+    int         length = 7;
+
+    test_printArray(nums, length);
+    cout << "Result: " << area.HistogramArea(nums, length) << endl;
+    cout << endl;
+
 }
 
 int main(void) {
@@ -761,6 +776,8 @@ int main(void) {
     test_mathPlusMinus();
 
     test_ArrayAddition();
+
+    test_HistogramArea();
 
 	return 0;
 }
