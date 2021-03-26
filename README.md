@@ -4,6 +4,7 @@ Coderbyte code challenges: This repository contains code solutions for code chal
 The completed code challenges are:
  - Alphabet Soup
  - ArithGeo
+ - Array Addition
  - Check Numbers
  - Chessboard Traveling (hard)
  - Consecutive (medium)
