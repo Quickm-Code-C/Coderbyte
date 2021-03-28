@@ -123,6 +123,9 @@
     <ClCompile Include="MathHistogramArea.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MathCoinCount.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="UsernameValidation.h">
@@ -228,6 +231,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MathHistogramArea.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MathCoinCount.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

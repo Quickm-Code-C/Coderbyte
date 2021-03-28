@@ -41,6 +41,7 @@
 #include "MathZeroSum.h"
 #include "ArrayAdditionSum.h"
 #include "MathHistogramArea.h"
+#include "MathCoinCount.h"
 
 using namespace std;
 
@@ -694,7 +695,30 @@ void  test_HistogramArea()
     test_printArray(nums, length);
     cout << "Result: " << area.HistogramArea(nums, length) << endl;
     cout << endl;
+}
 
+void test_CoinDeterminer()
+{
+    MathCoinCount     coin;
+    int               num;
+
+    cout << "Coin Determiner: " << endl;
+
+    num = 16;
+    cout << "Input: " << num << "  Result: " << coin.CoinDeterminer(num) << endl;
+
+    num = 25;
+    cout << "Input: " << num << "  Result: " << coin.CoinDeterminer(num) << endl;
+
+    num = 37;
+    cout << "Input: " << num << "  Result: " << coin.CoinDeterminer(num) << endl;
+
+    num = 14;
+    cout << "Input: " << num << "  Result: " << coin.CoinDeterminer(num) << endl;
+
+    num = 100;
+    cout << "Input: " << num << "  Result: " << coin.CoinDeterminer(num) << endl;
+    cout << endl;
 }
 
 int main(void) {
@@ -778,6 +802,8 @@ int main(void) {
     test_ArrayAddition();
 
     test_HistogramArea();
+
+    test_CoinDeterminer();
 
 	return 0;
 }
