@@ -7,6 +7,7 @@ The completed code challenges are:
  - Array Addition (Medium)
  - Check Numbers
  - Chessboard Traveling (hard)
+ - Coin Determiner (medium)
  - Consecutive (medium)
  - Find Intersection
  - First Factorial
