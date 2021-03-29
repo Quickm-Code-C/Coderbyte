@@ -14,7 +14,7 @@ The completed code challenges are:
  - Food Distribution (medium)
  - K Unique Chars (medium)
  - Kaprekar's Constant (hard)
- - HIstogram Area (medium)
+ - Histogram Area (medium)
  - Letter Capitalize
  - Letter Changes
  - Longest Word
@@ -24,6 +24,7 @@ The completed code challenges are:
  - Number Encoding (medium)
  - Other Products
  - Palindrome
+ - Plyus Minus (medium)
  - Power of 2
  - Prime Mover (medium)
  - Product Digits
