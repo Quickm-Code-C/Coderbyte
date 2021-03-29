@@ -42,6 +42,7 @@
 #include "ArrayAdditionSum.h"
 #include "MathHistogramArea.h"
 #include "MathCoinCount.h"
+#include "FoodBalancer.h"
 
 using namespace std;
 
@@ -52,7 +53,7 @@ void test_printArray(int* arr, int length)
 	cout << "Array: " << "[";
 	string str;
 
-	for (auto const& value : container)
+	for (int value : container)
 	{
 		str += to_string(value);
 		str += ",";
@@ -721,6 +722,25 @@ void test_CoinDeterminer()
     cout << endl;
 }
 
+void test_FoodDistribution()
+{
+    FoodBalancer  balancer;
+    cout << "Food Distribution:" << endl;
+
+    int         nums[] = {5, 3, 1, 2, 1};
+    int         length = 5;
+
+    test_printArray(nums, length);
+    cout << "Result: " << balancer.FoodDistribution(nums, length) << endl;
+
+    int         nums2[] = {4, 5, 2, 3, 1, 0};
+                length  = 6;
+
+    test_printArray(nums2, length);
+    cout << "Result: " << balancer.FoodDistribution(nums2, length) << endl;
+    cout << endl;
+}
+
 int main(void) {
 
 	test_usernameValidation();
@@ -804,6 +824,8 @@ int main(void) {
     test_HistogramArea();
 
     test_CoinDeterminer();
+
+    test_FoodDistribution();
 
 	return 0;
 }

@@ -162,6 +162,7 @@
     <ClCompile Include="Exponent2.cpp" />
     <ClCompile Include="Factorial.cpp" />
     <ClCompile Include="Fibonacci.cpp" />
+    <ClCompile Include="FoodBalancer.cpp" />
     <ClCompile Include="MathCoinCount.cpp" />
     <ClCompile Include="MathHistogramArea.cpp" />
     <ClCompile Include="MathSequence.cpp" />
@@ -200,6 +201,7 @@
     <ClInclude Include="Exponent2.h" />
     <ClInclude Include="Factorial.h" />
     <ClInclude Include="Fibonacci.h" />
+    <ClInclude Include="FoodBalancer.h" />
     <ClInclude Include="MathCoinCount.h" />
     <ClInclude Include="MathHistogramArea.h" />
     <ClInclude Include="MathSequence.h" />
