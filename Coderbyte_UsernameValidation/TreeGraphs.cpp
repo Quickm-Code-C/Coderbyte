@@ -130,6 +130,7 @@ std::string TreeGraphs::SymmetricTree(std::string strArr[], int length)
 // tree with the elements separated by a space. 
 // For example: if strArr is ["5", "2", "6", "1", "9", "#", "8", "#", "#", "#", 
 // "#", "4", "#"]
+// the output was incorrect.The correct output is 5 2 1 9 6 8 4
 std::string TreeGraphs::PreorderTraversal(std::string strArr[], int length)
 {
 	string					result;
