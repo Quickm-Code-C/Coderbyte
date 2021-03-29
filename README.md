@@ -11,6 +11,7 @@ The completed code challenges are:
  - Find Intersection
  - First Factorial
  - First Reverse
+ - Food Distribution (medium)
  - K Unique Chars (medium)
  - Kaprekar's Constant (hard)
  - HIstogram Area (medium)
